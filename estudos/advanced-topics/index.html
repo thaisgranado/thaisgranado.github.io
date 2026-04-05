@@ -1,30 +1,332 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advanced AI Topics</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Topics | Thais Granado</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #f7f8fb;
+      color: #222;
+    }
 
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-family: Arial, sans-serif;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cbd5f5;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    .language-switch {
+      text-align: center;
+      padding: 15px;
+      background-color: #e5e7eb;
+    }
+
+    .language-switch button {
+      margin: 5px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background-color: #111827;
+      color: white;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    nav {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    h2 {
+      font-size: 56px;
+      margin-bottom: 18px;
+      color: #111;
+    }
+
+    .intro {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      color: #374151;
+      max-width: 860px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    .card a {
+      color: #5a2d82;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 22px;
+      color: #111827;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #2563eb;
+      font-weight: 600;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
+  </style>
+</head>
 <body>
 
-<h1>Advanced AI Topics</h1>
+  <header>
+    <h1>Thais Granado</h1>
+    <p>Legal | Governance | Corporate | Data & AI</p>
+  </header>
 
-<ul>
-<li><a href="instruction-following.html">Instruction Following</a></li>
-<li><a href="evaluating-ai-responses.html">Evaluating AI Responses</a></li>
-<li><a href="data-annotation.html">Data Annotation</a></li>
-<li><a href="data-collection.html">Data Collection</a></li>
-<li><a href="human-data-evaluation.html">Human Data Evaluation</a></li>
-<li><a href="handling-ambiguous-data.html">Handling Ambiguous Data</a></li>
-<li><a href="generative-ai.html">Generative AI</a></li>
-<li><a href="ethics-in-ai.html">Ethics in AI</a></li>
-<li><a href="privacy-and-data-protection.html">Privacy and Data Protection</a></li>
-<li><a href="recommendation-quality.html">Recommendation Quality</a></li>
-<li><a href="trust-and-safety.html">Trust and Safety</a></li>
-</ul>
+  <div class="language-switch">
+    <button onclick="showLanguage('en')">English</button>
+    <button onclick="showLanguage('pt')">Português</button>
+  </div>
 
-<p><a href="../index.html">← Voltar para Estudos</a></p>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../about.html">About / Sobre</a>
+    <a href="../../projects.html">Projects / Projetos</a>
+    <a href="../../judgement-notes.html">Judgement Notes / Notas</a>
+    <a href="../../certificates.html">Certificates / Certificados</a>
+    <a href="../index.html">Studies / Estudos</a>
+  </nav>
 
+  <div class="container">
+
+    <div id="en" class="lang active">
+      <h2>Advanced AI Topics</h2>
+      <p class="intro">
+        This section focuses on advanced topics connected to AI evaluation, instruction following, ambiguity, privacy, safety, recommendation quality, and human judgement in structured systems.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Instruction Following</h3>
+          <p>How models follow prompts, constraints, and requested output formats.</p>
+          <a href="instruction-following.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Evaluating AI Responses</h3>
+          <p>Judging relevance, clarity, factual correctness, and instruction alignment.</p>
+          <a href="evaluating-ai-responses.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Data Annotation</h3>
+          <p>The role of structured labelling in training reliable and useful systems.</p>
+          <a href="data-annotation.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Data Collection</h3>
+          <p>Why source quality, representativeness, and structure affect model outcomes.</p>
+          <a href="data-collection.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Human Data Evaluation</h3>
+          <p>How human review improves consistency, reliability, and performance.</p>
+          <a href="human-data-evaluation.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Handling Ambiguous Data</h3>
+          <p>Making careful judgements when language, intent, or context is unclear.</p>
+          <a href="handling-ambiguous-data.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Generative AI</h3>
+          <p>Capabilities, limitations, and the role of oversight in generated outputs.</p>
+          <a href="generative-ai.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Ethics in AI</h3>
+          <p>Fairness, responsibility, transparency, and the human implications of systems.</p>
+          <a href="ethics-in-ai.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Privacy and Data Protection</h3>
+          <p>Why data handling standards matter in trustworthy intelligent systems.</p>
+          <a href="privacy-and-data-protection.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Recommendation Quality</h3>
+          <p>Assessing whether recommendations are relevant, useful, and well-ranked.</p>
+          <a href="recommendation-quality.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Trust and Safety</h3>
+          <p>How systems are evaluated to reduce harmful, unsafe, or inappropriate outputs.</p>
+          <a href="trust-and-safety.html">Open topic</a>
+        </div>
+      </div>
+
+      <a class="back-link" href="../index.html">← Back to Studies</a>
+    </div>
+
+    <div id="pt" class="lang">
+      <h2>Advanced AI Topics</h2>
+      <p class="intro">
+        Esta seção foca em temas mais avançados ligados à avaliação de IA, instruction following, ambiguidade, privacidade, segurança, recommendation quality e julgamento humano em sistemas estruturados.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Instruction Following</h3>
+          <p>Como modelos seguem prompts, restrições e formatos de resposta solicitados.</p>
+          <a href="instruction-following.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Evaluating AI Responses</h3>
+          <p>Análise de relevância, clareza, correção factual e alinhamento com instruções.</p>
+          <a href="evaluating-ai-responses.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Data Annotation</h3>
+          <p>O papel da rotulagem estruturada no treinamento de sistemas confiáveis e úteis.</p>
+          <a href="data-annotation.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Data Collection</h3>
+          <p>Por que a qualidade, origem e estrutura dos dados afetam os resultados do modelo.</p>
+          <a href="data-collection.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Human Data Evaluation</h3>
+          <p>Como a revisão humana melhora consistência, confiabilidade e desempenho.</p>
+          <a href="human-data-evaluation.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Handling Ambiguous Data</h3>
+          <p>Tomada de decisão cuidadosa quando linguagem, intenção ou contexto são ambíguos.</p>
+          <a href="handling-ambiguous-data.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Generative AI</h3>
+          <p>Capacidades, limitações e o papel da supervisão em conteúdos gerados.</p>
+          <a href="generative-ai.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Ethics in AI</h3>
+          <p>Justiça, responsabilidade, transparência e implicações humanas dos sistemas.</p>
+          <a href="ethics-in-ai.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Privacy and Data Protection</h3>
+          <p>Por que padrões de tratamento de dados são essenciais em sistemas confiáveis.</p>
+          <a href="privacy-and-data-protection.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Recommendation Quality</h3>
+          <p>Avaliação da relevância, utilidade e qualidade de ranqueamento das recomendações.</p>
+          <a href="recommendation-quality.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Trust and Safety</h3>
+          <p>Como sistemas são avaliados para reduzir conteúdos prejudiciais ou inadequados.</p>
+          <a href="trust-and-safety.html">Abrir tópico</a>
+        </div>
+      </div>
+
+      <a class="back-link" href="../index.html">← Voltar para Estudos</a>
+    </div>
+
+  </div>
+
+  <script>
+    function showLanguage(language) {
+      document.getElementById('en').classList.remove('active');
+      document.getElementById('pt').classList.remove('active');
+      document.getElementById(language).classList.add('active');
+    }
+  </script>
 </body>
 </html>
