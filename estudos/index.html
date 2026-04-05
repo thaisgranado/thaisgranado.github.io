@@ -1,39 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estudos e Reflexões</title>
+  <title>Studies | Thais Granado</title>
   <style>
     body {
       margin: 0;
       font-family: Georgia, serif;
       background-color: #f7f8fb;
       color: #222;
-      padding: 40px 20px 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-family: Arial, sans-serif;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cbd5f5;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    .language-switch {
+      text-align: center;
+      padding: 15px;
+      background-color: #e5e7eb;
+    }
+
+    .language-switch button {
+      margin: 5px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background-color: #111827;
+      color: white;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    nav {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
       max-width: 980px;
       margin: 0 auto;
+      padding: 40px 20px 60px;
     }
 
-    h1 {
+    h2 {
       font-size: 56px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #111;
     }
 
-    .top-links {
-      margin-bottom: 35px;
-    }
-
-    .top-links a {
-      display: block;
-      margin-bottom: 14px;
+    .intro {
       font-size: 20px;
-      color: #5a2d82;
-      text-decoration: underline;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      color: #374151;
+      max-width: 850px;
     }
 
     .cards {
@@ -50,10 +102,10 @@
       box-shadow: 0 4px 14px rgba(0,0,0,0.06);
     }
 
-    .card h2 {
+    .card h3 {
       margin-top: 0;
       margin-bottom: 14px;
-      font-size: 28px;
+      font-size: 32px;
       color: #111827;
     }
 
@@ -67,6 +119,7 @@
       color: #2563eb;
       font-weight: 600;
       text-decoration: none;
+      font-family: Arial, sans-serif;
     }
 
     .card a:hover {
@@ -80,9 +133,9 @@
       box-shadow: 0 4px 14px rgba(0,0,0,0.06);
     }
 
-    .topic-list h2 {
+    .topic-list h3 {
       margin-top: 0;
-      font-size: 30px;
+      font-size: 34px;
       margin-bottom: 20px;
       color: #111827;
     }
@@ -107,88 +160,201 @@
       color: #2563eb;
       font-weight: 600;
       text-decoration: none;
+      font-family: Arial, sans-serif;
     }
 
     .back-home:hover {
       text-decoration: underline;
     }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Estudos e Reflexões</h1>
 
-    <div class="top-links">
-      <a href="core-topics/index.html">→ Ir para Core Tópicos IA</a>
-      <a href="advanced-topics/index.html">→ Ir para Core Tópicos Advanced</a>
-    </div>
+  <header>
+    <h1>Thais Granado</h1>
+    <p>Legal | Governance | Corporate | Data & AI</p>
+  </header>
 
-    <div class="cards">
-      <div class="card">
-        <h2>Core Topics</h2>
-        <p>
-          Biblioteca principal com temas amplos sobre inteligência artificial, qualidade de dados, avaliação, automação, tecnologia e impacto no trabalho.
-        </p>
-        <a href="core-topics/index.html">Abrir Core Topics</a>
-      </div>
-
-      <div class="card">
-        <h2>Advanced Topics</h2>
-        <p>
-          Seção focada em temas mais avançados ligados a avaliação de IA, ambiguidades, segurança, instruction following, recommendation quality e julgamento humano.
-        </p>
-        <a href="advanced-topics/index.html">Abrir Advanced Topics</a>
-      </div>
-    </div>
-
-    <div class="topic-list">
-      <h2>Tópicos de Estudo</h2>
-      <ul>
-        <li><a href="ai-in-ecommerce.html">AI in E-commerce</a></li>
-        <li><a href="artificial-intelligence-in-education.html">Artificial Intelligence in Education</a></li>
-        <li><a href="automation-and-the-future-of-work.html">Automation and the Future of Work</a></li>
-        <li><a href="bias-in-ai-systems.html">Bias in AI Systems</a></li>
-        <li><a href="cloud-computing-fundamentals.html">Cloud Computing Fundamentals</a></li>
-        <li><a href="consumer-technology-and-sales.html">Consumer Technology and Sales</a></li>
-        <li><a href="content-moderation-and-safety.html">Content Moderation and Safety</a></li>
-        <li><a href="continuous-improvement-in-ai-systems.html">Continuous Improvement in AI Systems</a></li>
-        <li><a href="customer-service-in-digital-platforms.html">Customer Service in Digital Platforms</a></li>
-        <li><a href="cybersecurity-and-data-protection.html">Cybersecurity and Data Protection</a></li>
-        <li><a href="data-annotation.html">Data Annotation</a></li>
-        <li><a href="data-collection.html">Data Collection</a></li>
-        <li><a href="data-quality.html">Data Quality</a></li>
-        <li><a href="decision-making-with-data.html">Decision Making with Data</a></li>
-        <li><a href="digital-education.html">Digital Education</a></li>
-        <li><a href="digital-transformation.html">Digital Transformation</a></li>
-        <li><a href="ecommerce-and-customer-experience.html">E-commerce and Customer Experience</a></li>
-        <li><a href="ecommerce-operations.html">E-commerce Operations</a></li>
-        <li><a href="ethics-in-artificial-intelligence.html">Ethics in Artificial Intelligence</a></li>
-        <li><a href="evaluating-ai-responses.html">Evaluating AI Responses</a></li>
-        <li><a href="generative-ai-possibilities-and-limits.html">Generative AI: Possibilities and Limits</a></li>
-        <li><a href="hallucinations-in-ai.html">AI Hallucinations</a></li>
-        <li><a href="handling-ambiguous-data.html">Handling Ambiguous Data</a></li>
-        <li><a href="human-data-evaluation-process.html">Human Data Evaluation Process</a></li>
-        <li><a href="human-evaluation-in-ai-systems.html">Human Evaluation in AI Systems</a></li>
-        <li><a href="human-in-the-loop.html">Human in the Loop</a></li>
-        <li><a href="human-role-in-ai-systems.html">Human Role in AI Systems</a></li>
-        <li><a href="impact-of-technology-on-society.html">Impact of Technology on Society</a></li>
-        <li><a href="importance-of-technology.html">Importance of Technology</a></li>
-        <li><a href="language-model-data-associate-role.html">Language Model Data Associate Role</a></li>
-        <li><a href="privacy-and-data-protection.html">Privacy and Data Protection</a></li>
-        <li><a href="product-search-and-recommendation-quality.html">Product Search and Recommendation Quality</a></li>
-        <li><a href="remote-work.html">Remote Work</a></li>
-        <li><a href="risk-management-in-technology.html">Risk Management in Technology</a></li>
-        <li><a href="role-of-guidelines-in-data-annotation.html">Role of Guidelines in Data Annotation</a></li>
-        <li><a href="smart-devices-and-alexa.html">Smart Devices and Alexa</a></li>
-        <li><a href="smartphone-use-by-children-and-teenagers.html">Smartphone Use by Children and Teenagers</a></li>
-        <li><a href="social-media.html">Social Media</a></li>
-        <li><a href="technology-and-productivity.html">Technology and Productivity</a></li>
-        <li><a href="trust-and-safety-in-online-platforms.html">Trust and Safety in Online Platforms</a></li>
-        <li><a href="voice-ai-evaluation-and-alexa-quality.html">Voice AI Evaluation and Alexa Quality</a></li>
-      </ul>
-
-      <a class="back-home" href="../index.html">← Voltar para Home</a>
-    </div>
+  <div class="language-switch">
+    <button onclick="showLanguage('en')">English</button>
+    <button onclick="showLanguage('pt')">Português</button>
   </div>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About / Sobre</a>
+    <a href="../projects.html">Projects / Projetos</a>
+    <a href="../judgement-notes.html">Judgement Notes / Notas</a>
+    <a href="../certificates.html">Certificates / Certificados</a>
+    <a href="index.html">Studies / Estudos</a>
+  </nav>
+
+  <div class="container">
+
+    <div id="en" class="lang active">
+      <h2>Studies & Reflections</h2>
+      <p class="intro">
+        This section brings together study topics, reflections, and structured learning material related to artificial intelligence, data quality, evaluation, governance, and responsible systems.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Core Topics</h3>
+          <p>
+            Main library with broader topics covering artificial intelligence, data quality, evaluation, automation, technology, and the future of work.
+          </p>
+          <a href="core-topics/index.html">Open Core Topics</a>
+        </div>
+
+        <div class="card">
+          <h3>Advanced Topics</h3>
+          <p>
+            A more focused section dedicated to AI evaluation, ambiguity, safety, instruction following, recommendation quality, and human judgement.
+          </p>
+          <a href="advanced-topics/index.html">Open Advanced Topics</a>
+        </div>
+      </div>
+
+      <div class="topic-list">
+        <h3>Study Topics</h3>
+        <ul>
+          <li><a href="ai-in-ecommerce.html">AI in E-commerce</a></li>
+          <li><a href="artificial-intelligence-in-education.html">Artificial Intelligence in Education</a></li>
+          <li><a href="automation-and-the-future-of-work.html">Automation and the Future of Work</a></li>
+          <li><a href="bias-in-ai-systems.html">Bias in AI Systems</a></li>
+          <li><a href="cloud-computing-fundamentals.html">Cloud Computing Fundamentals</a></li>
+          <li><a href="consumer-technology-and-sales.html">Consumer Technology and Sales</a></li>
+          <li><a href="content-moderation-and-safety.html">Content Moderation and Safety</a></li>
+          <li><a href="continuous-improvement-in-ai-systems.html">Continuous Improvement in AI Systems</a></li>
+          <li><a href="customer-service-in-digital-platforms.html">Customer Service in Digital Platforms</a></li>
+          <li><a href="cybersecurity-and-data-protection.html">Cybersecurity and Data Protection</a></li>
+          <li><a href="data-annotation.html">Data Annotation</a></li>
+          <li><a href="data-collection.html">Data Collection</a></li>
+          <li><a href="data-quality.html">Data Quality</a></li>
+          <li><a href="decision-making-with-data.html">Decision Making with Data</a></li>
+          <li><a href="digital-education.html">Digital Education</a></li>
+          <li><a href="digital-transformation.html">Digital Transformation</a></li>
+          <li><a href="ecommerce-and-customer-experience.html">E-commerce and Customer Experience</a></li>
+          <li><a href="ecommerce-operations.html">E-commerce Operations</a></li>
+          <li><a href="ethics-in-artificial-intelligence.html">Ethics in Artificial Intelligence</a></li>
+          <li><a href="evaluating-ai-responses.html">Evaluating AI Responses</a></li>
+          <li><a href="generative-ai-possibilities-and-limits.html">Generative AI: Possibilities and Limits</a></li>
+          <li><a href="hallucinations-in-ai.html">AI Hallucinations</a></li>
+          <li><a href="handling-ambiguous-data.html">Handling Ambiguous Data</a></li>
+          <li><a href="human-data-evaluation-process.html">Human Data Evaluation Process</a></li>
+          <li><a href="human-evaluation-in-ai-systems.html">Human Evaluation in AI Systems</a></li>
+          <li><a href="human-in-the-loop.html">Human in the Loop</a></li>
+          <li><a href="human-role-in-ai-systems.html">Human Role in AI Systems</a></li>
+          <li><a href="impact-of-technology-on-society.html">Impact of Technology on Society</a></li>
+          <li><a href="importance-of-technology.html">Importance of Technology</a></li>
+          <li><a href="language-model-data-associate-role.html">Language Model Data Associate Role</a></li>
+          <li><a href="privacy-and-data-protection.html">Privacy and Data Protection</a></li>
+          <li><a href="product-search-and-recommendation-quality.html">Product Search and Recommendation Quality</a></li>
+          <li><a href="remote-work.html">Remote Work</a></li>
+          <li><a href="risk-management-in-technology.html">Risk Management in Technology</a></li>
+          <li><a href="role-of-guidelines-in-data-annotation.html">Role of Guidelines in Data Annotation</a></li>
+          <li><a href="smart-devices-and-alexa.html">Smart Devices and Alexa</a></li>
+          <li><a href="smartphone-use-by-children-and-teenagers.html">Smartphone Use by Children and Teenagers</a></li>
+          <li><a href="social-media.html">Social Media</a></li>
+          <li><a href="technology-and-productivity.html">Technology and Productivity</a></li>
+          <li><a href="trust-and-safety-in-online-platforms.html">Trust and Safety in Online Platforms</a></li>
+          <li><a href="voice-ai-evaluation-and-alexa-quality.html">Voice AI Evaluation and Alexa Quality</a></li>
+        </ul>
+
+        <a class="back-home" href="../index.html">← Back to Home</a>
+      </div>
+    </div>
+
+    <div id="pt" class="lang">
+      <h2>Estudos e Reflexões</h2>
+      <p class="intro">
+        Esta seção reúne temas de estudo, reflexões e materiais de aprendizagem estruturada relacionados à inteligência artificial, qualidade de dados, avaliação, governança e sistemas responsáveis.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Core Topics</h3>
+          <p>
+            Biblioteca principal com temas amplos sobre inteligência artificial, qualidade de dados, avaliação, automação, tecnologia e futuro do trabalho.
+          </p>
+          <a href="core-topics/index.html">Abrir Core Topics</a>
+        </div>
+
+        <div class="card">
+          <h3>Advanced Topics</h3>
+          <p>
+            Seção mais focada em avaliação de IA, ambiguidades, segurança, instruction following, recommendation quality e julgamento humano.
+          </p>
+          <a href="advanced-topics/index.html">Abrir Advanced Topics</a>
+        </div>
+      </div>
+
+      <div class="topic-list">
+        <h3>Tópicos de Estudo</h3>
+        <ul>
+          <li><a href="ai-in-ecommerce.html">AI in E-commerce</a></li>
+          <li><a href="artificial-intelligence-in-education.html">Artificial Intelligence in Education</a></li>
+          <li><a href="automation-and-the-future-of-work.html">Automation and the Future of Work</a></li>
+          <li><a href="bias-in-ai-systems.html">Bias in AI Systems</a></li>
+          <li><a href="cloud-computing-fundamentals.html">Cloud Computing Fundamentals</a></li>
+          <li><a href="consumer-technology-and-sales.html">Consumer Technology and Sales</a></li>
+          <li><a href="content-moderation-and-safety.html">Content Moderation and Safety</a></li>
+          <li><a href="continuous-improvement-in-ai-systems.html">Continuous Improvement in AI Systems</a></li>
+          <li><a href="customer-service-in-digital-platforms.html">Customer Service in Digital Platforms</a></li>
+          <li><a href="cybersecurity-and-data-protection.html">Cybersecurity and Data Protection</a></li>
+          <li><a href="data-annotation.html">Data Annotation</a></li>
+          <li><a href="data-collection.html">Data Collection</a></li>
+          <li><a href="data-quality.html">Data Quality</a></li>
+          <li><a href="decision-making-with-data.html">Decision Making with Data</a></li>
+          <li><a href="digital-education.html">Digital Education</a></li>
+          <li><a href="digital-transformation.html">Digital Transformation</a></li>
+          <li><a href="ecommerce-and-customer-experience.html">E-commerce and Customer Experience</a></li>
+          <li><a href="ecommerce-operations.html">E-commerce Operations</a></li>
+          <li><a href="ethics-in-artificial-intelligence.html">Ethics in Artificial Intelligence</a></li>
+          <li><a href="evaluating-ai-responses.html">Evaluating AI Responses</a></li>
+          <li><a href="generative-ai-possibilities-and-limits.html">Generative AI: Possibilities and Limits</a></li>
+          <li><a href="hallucinations-in-ai.html">AI Hallucinations</a></li>
+          <li><a href="handling-ambiguous-data.html">Handling Ambiguous Data</a></li>
+          <li><a href="human-data-evaluation-process.html">Human Data Evaluation Process</a></li>
+          <li><a href="human-evaluation-in-ai-systems.html">Human Evaluation in AI Systems</a></li>
+          <li><a href="human-in-the-loop.html">Human in the Loop</a></li>
+          <li><a href="human-role-in-ai-systems.html">Human Role in AI Systems</a></li>
+          <li><a href="impact-of-technology-on-society.html">Impact of Technology on Society</a></li>
+          <li><a href="importance-of-technology.html">Importance of Technology</a></li>
+          <li><a href="language-model-data-associate-role.html">Language Model Data Associate Role</a></li>
+          <li><a href="privacy-and-data-protection.html">Privacy and Data Protection</a></li>
+          <li><a href="product-search-and-recommendation-quality.html">Product Search and Recommendation Quality</a></li>
+          <li><a href="remote-work.html">Remote Work</a></li>
+          <li><a href="risk-management-in-technology.html">Risk Management in Technology</a></li>
+          <li><a href="role-of-guidelines-in-data-annotation.html">Role of Guidelines in Data Annotation</a></li>
+          <li><a href="smart-devices-and-alexa.html">Smart Devices and Alexa</a></li>
+          <li><a href="smartphone-use-by-children-and-teenagers.html">Smartphone Use by Children and Teenagers</a></li>
+          <li><a href="social-media.html">Social Media</a></li>
+          <li><a href="technology-and-productivity.html">Technology and Productivity</a></li>
+          <li><a href="trust-and-safety-in-online-platforms.html">Trust and Safety in Online Platforms</a></li>
+          <li><a href="voice-ai-evaluation-and-alexa-quality.html">Voice AI Evaluation and Alexa Quality</a></li>
+        </ul>
+
+        <a class="back-home" href="../index.html">← Voltar para Home</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showLanguage(language) {
+      document.getElementById('en').classList.remove('active');
+      document.getElementById('pt').classList.remove('active');
+      document.getElementById(language).classList.add('active');
+    }
+  </script>
 </body>
 </html>
