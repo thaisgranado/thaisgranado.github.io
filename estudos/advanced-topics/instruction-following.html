@@ -1,29 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Instruction Following</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instruction Following | Thais Granado</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #f7f8fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .box {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: Arial, sans-serif;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Seguimento de Instruções em IA</h1>
-<h2>Instruction Following</h2>
+<header>
+  <h1>Instruction Following</h1>
+</header>
 
-<p>O seguimento de instruções é um dos principais critérios de avaliação em sistemas de inteligência artificial, especialmente em modelos de linguagem. Ele mede a capacidade do modelo de compreender e responder exatamente ao que foi solicitado, respeitando formato, contexto e restrições definidas no prompt.</p>
+<div class="container">
+  <div class="box">
 
-<p>Na prática, avaliadores humanos verificam se as respostas seguem corretamente as guidelines estabelecidas e atendem aos critérios de avaliação. Esse processo inclui análise de aderência às instruções, precisão factual, completude da resposta e relevância em relação ao objetivo da tarefa.</p>
+    <h1>Seguimento de Instruções em IA</h1>
 
-<p>Modelos podem gerar respostas plausíveis, porém incorretas, quando ignoram partes da instrução ou interpretam o pedido de forma incompleta. Esses desvios impactam diretamente a qualidade do output e podem comprometer tarefas de annotation e avaliação.</p>
+    <p>
+      Instruction following is a core evaluation criterion (avaliação) in artificial intelligence systems, particularly in language models. It measures whether a model correctly understands and responds to a prompt (instrução), while respecting format, constraints, and context.
+    </p>
 
-<p>Quando o instruction following não é consistente, o sistema produz resultados desalinhados com as expectativas do usuário, reduzindo a confiabilidade do modelo e afetando sua performance em aplicações reais.</p>
+    <p>
+      In practice, human evaluators assess whether responses follow established guidelines (diretrizes) and meet defined evaluation standards. This includes checking instruction adherence, factual accuracy, completeness, and relevance to the task objective.
+    </p>
 
-<p>Por isso, a combinação entre guidelines claras, critérios de avaliação bem definidos e revisão humana contínua é essencial. Esse processo melhora a qualidade das respostas, reduz inconsistências e garante maior alinhamento entre o modelo e as instruções fornecidas.</p>
+    <p>
+      Common failures occur when models ignore constraints, misinterpret instructions, or produce partially relevant responses. These issues directly impact the quality of outputs (saídas) and reduce reliability in annotation (anotação) and evaluation workflows.
+    </p>
 
-<p><strong>Fonte:</strong> AWS Responsible AI Practices (2026); instruction-following evaluation research (2025).</p>
+    <p>
+      Inconsistent instruction following leads to misaligned results, reduced user trust, and lower performance in real-world applications. Even when responses appear plausible, lack of alignment with the prompt can compromise usability and decision-making.
+    </p>
 
-<p><a href="index.html">← Voltar para Advanced Topics</a></p>
+    <p>
+      To mitigate these risks, clear guidelines (diretrizes), well-defined evaluation criteria, and continuous human review are essential. This combination improves output consistency, reduces errors, and ensures alignment between model responses and user intent.
+    </p>
+
+    <p>
+      <strong>Source:</strong> AWS Responsible AI Practices (2026); instruction-following evaluation research (2025).
+    </p>
+
+    <a class="back" href="index.html">← Back to Advanced Topics</a>
+
+  </div>
+</div>
 
 </body>
 </html>
