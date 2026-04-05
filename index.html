@@ -1,20 +1,291 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thais Granado</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thais Granado | Professional Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f8fb;
+      color: #222;
+    }
 
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 28px 20px 22px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 16px;
+      color: #d1d5db;
+    }
+
+    .language-switch {
+      text-align: center;
+      padding: 16px 20px 8px;
+      background-color: #e5e7eb;
+    }
+
+    .language-switch button {
+      margin: 0 6px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #111827;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .language-switch button:hover {
+      background-color: #374151;
+    }
+
+    nav {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 14px 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .hero {
+      background-color: white;
+      border-radius: 10px;
+      padding: 32px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      margin-bottom: 28px;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #111827;
+    }
+
+    .hero p {
+      line-height: 1.7;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #111827;
+      font-size: 20px;
+    }
+
+    .card p {
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .card a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background-color: #111827;
+      color: #d1d5db;
+      font-size: 14px;
+    }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
+  </style>
+</head>
 <body>
 
-<h1>Thais Granado</h1>
+  <header>
+    <h1>Thais Granado</h1>
+    <p>Legal, Governance, Corporate & AI Evaluation</p>
+  </header>
 
-<ul>
-<li><a href="estudos/index.html">Estudos e Reflexões</a></li>
-<li><a href="estudos/core-topics/index.html">Core Tópicos IA</a></li>
-<li><a href="estudos/advanced-topics/index.html">Advanced AI Topics</a></li>
-</ul>
+  <div class="language-switch">
+    <button onclick="showLanguage('en')">English</button>
+    <button onclick="showLanguage('pt')">Português</button>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About / Sobre</a>
+    <a href="projects.html">Projects / Projetos</a>
+    <a href="judgement-notes.html">Judgement Notes / Notas</a>
+    <a href="estudos/index.html">Studies / Estudos</a>
+  </nav>
+
+  <div class="container">
+
+    <div id="en" class="lang active">
+      <section class="hero">
+        <h2>Professional Portfolio</h2>
+        <p>
+          Welcome to my professional portfolio. My background combines Law, regulated environments, corporate and executive support, customer-facing work, and data annotation and evaluation.
+        </p>
+        <p>
+          I began my career in the Brazilian judicial system, where I worked with legal documentation, case analysis, and later as a certified mediator and conciliator in civil, family, and consumer cases. This experience strengthened my structured thinking, attention to detail, neutrality, and decision-making in sensitive and high-responsibility contexts.
+        </p>
+        <p>
+          After moving to the United Kingdom, I expanded my experience into administrative, executive support, corporate and customer-facing roles. Alongside my professional path, I have continued developing my knowledge through studies in corporate governance, data protection, business operations, Python, and artificial intelligence.
+        </p>
+        <p>
+          This portfolio brings together my professional journey, current studies, selected projects, written reflections, and examples of structured evaluation work.
+        </p>
+      </section>
+
+      <section class="sections">
+        <div class="card">
+          <h3>About Me</h3>
+          <p>
+            A summary of my professional background across legal, judicial, corporate and operational environments.
+          </p>
+          <a href="about.html">Read more</a>
+        </div>
+
+        <div class="card">
+          <h3>Projects & Work</h3>
+          <p>
+            Selected academic and professional projects, including writing, presentations and structured work samples.
+          </p>
+          <a href="projects.html">View projects</a>
+        </div>
+
+        <div class="card">
+          <h3>Judgement Notes</h3>
+          <p>
+            Reflections on judgement, governance, responsibility, systems, and structured thinking developed through study and experience.
+          </p>
+          <a href="judgement-notes.html">Read notes</a>
+        </div>
+
+        <div class="card">
+          <h3>Studies</h3>
+          <p>
+            A collection of study topics related to AI, data quality, evaluation, governance and responsible systems.
+          </p>
+          <a href="estudos/index.html">Open studies</a>
+        </div>
+      </section>
+    </div>
+
+    <div id="pt" class="lang">
+      <section class="hero">
+        <h2>Portfólio Profissional</h2>
+        <p>
+          Bem-vinda(o) ao meu portfólio profissional. Minha trajetória combina Direito, ambientes regulados, suporte corporativo e executivo, funções com contato direto com o público e experiência com anotação e avaliação de dados.
+        </p>
+        <p>
+          Iniciei minha carreira no sistema judiciário brasileiro, atuando com documentação jurídica, análise de processos e, posteriormente, como mediadora e conciliadora certificada em casos cíveis, de família e do consumidor. Essa experiência fortaleceu meu pensamento estruturado, minha atenção aos detalhes, neutralidade e capacidade de decisão em contextos sensíveis e de alta responsabilidade.
+        </p>
+        <p>
+          Após me mudar para o Reino Unido, ampliei minha experiência para funções administrativas, suporte executivo, ambientes corporativos e atendimento ao cliente. Paralelamente à minha trajetória profissional, sigo desenvolvendo meus estudos em governança corporativa, proteção de dados, operações de negócios, Python e inteligência artificial.
+        </p>
+        <p>
+          Este portfólio reúne minha trajetória profissional, meus estudos atuais, projetos selecionados, reflexões escritas e exemplos de trabalho com avaliação estruturada.
+        </p>
+      </section>
+
+      <section class="sections">
+        <div class="card">
+          <h3>Sobre Mim</h3>
+          <p>
+            Um resumo da minha trajetória profissional em ambientes jurídicos, judiciais, corporativos e operacionais.
+          </p>
+          <a href="about.html">Ler mais</a>
+        </div>
+
+        <div class="card">
+          <h3>Projetos e Trabalhos</h3>
+          <p>
+            Projetos acadêmicos e profissionais selecionados, incluindo textos, apresentações e amostras de trabalho estruturado.
+          </p>
+          <a href="projects.html">Ver projetos</a>
+        </div>
+
+        <div class="card">
+          <h3>Notas de Julgamento</h3>
+          <p>
+            Reflexões sobre julgamento, governança, responsabilidade, sistemas e pensamento estruturado desenvolvidas ao longo da minha trajetória.
+          </p>
+          <a href="judgement-notes.html">Ler notas</a>
+        </div>
+
+        <div class="card">
+          <h3>Estudos</h3>
+          <p>
+            Uma coleção de temas de estudo relacionados a IA, qualidade de dados, avaliação, governança e sistemas responsáveis.
+          </p>
+          <a href="estudos/index.html">Abrir estudos</a>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Thais Granado | Professional Portfolio</p>
+  </footer>
+
+  <script>
+    function showLanguage(language) {
+      document.getElementById('en').classList.remove('active');
+      document.getElementById('pt').classList.remove('active');
+      document.getElementById(language).classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
