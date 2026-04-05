@@ -58,6 +58,14 @@ p {
 .back:hover {
   text-decoration: underline;
 }
+
+.lang {
+  display: none;
+}
+
+.lang.active {
+  display: block;
+}
 </style>
 </head>
 
@@ -69,32 +77,70 @@ Instruction Following
 
 <div class="container">
 
-<h1>Instruction Following</h1>
-<h2>Seguimento de Instruções em IA</h2>
+  <div id="en" class="lang">
+    <h1>Instruction Following</h1>
+    <h2>Instruction Following in AI</h2>
 
-<p>
-Instruction following (seguimento de instruções) is a core evaluation criterion (critério de avaliação) in artificial intelligence systems, particularly in language models. It measures whether the model correctly interprets a prompt (instrução) and produces outputs (saídas) that follow the required format, constraints, and context.
-</p>
+    <p>
+      Instruction following is a core evaluation criterion in AI systems, especially in language models. It measures whether the model correctly interprets a prompt and produces outputs that follow the required format, constraints, and context.
+    </p>
 
-<p>
-In practice, human evaluators assess whether outputs comply with established guidelines (diretrizes) and meet defined evaluation standards. This includes verifying factual accuracy, completeness, relevance, and adherence to instructions. Even minor deviations, such as ignoring constraints or partially answering the prompt, are considered failures.
-</p>
+    <p>
+      In practice, human evaluators assess whether outputs comply with established guidelines and meet defined evaluation standards. This includes verifying factual accuracy, completeness, relevance, and adherence to instructions.
+    </p>
 
-<p>
-Models may generate outputs that appear plausible but do not fully follow the instruction. These cases often involve incomplete reasoning, incorrect assumptions, or missing constraints. Such issues reduce reliability and negatively impact downstream tasks such as annotation, ranking, and validation.
-</p>
+    <p>
+      Models may generate plausible outputs that still fail because they ignore constraints, misinterpret the request, or only partially complete the task. These issues reduce reliability and affect downstream workflows such as annotation, ranking, and validation.
+    </p>
 
-<p>
-Inconsistent instruction following leads to variability across outputs, making it harder to maintain quality and standardisation. Over time, these inconsistencies can affect model performance and reduce user trust.
-</p>
+    <p>
+      Clear guidelines, consistent evaluation criteria, and continuous human review improve output quality and help ensure stronger alignment between model behaviour and user intent.
+    </p>
 
-<p>
-For this reason, combining clear guidelines (diretrizes), well-defined evaluation criteria, and continuous human review is essential. This process improves output consistency, reduces errors, and ensures better alignment between model behaviour and user intent.
-</p>
+    <a class="back" href="index.html?lang=en">← Back to Advanced Topics</a>
+  </div>
 
-<a class="back" href="index.html">← Back to Advanced Topics</a>
+  <div id="pt" class="lang">
+    <h1>Instruction Following</h1>
+    <h2>Seguimento de Instruções em IA</h2>
+
+    <p>
+      O instruction following (seguimento de instruções) é um dos principais critérios de avaliação em sistemas de IA, especialmente em modelos de linguagem. Ele mede se o modelo interpreta corretamente um prompt e produz outputs (saídas) alinhados ao formato, às restrições e ao contexto exigidos.
+    </p>
+
+    <p>
+      Na prática, avaliadores humanos verificam se os outputs seguem as guidelines (diretrizes) estabelecidas e atendem aos padrões definidos de avaliação. Isso inclui precisão factual, completude, relevância e aderência às instruções.
+    </p>
+
+    <p>
+      Modelos podem gerar outputs plausíveis e ainda assim falhar porque ignoram restrições, interpretam mal o pedido ou completam a tarefa apenas parcialmente. Esses problemas reduzem a confiabilidade e afetam fluxos posteriores como annotation, ranking e validation.
+    </p>
+
+    <p>
+      Guidelines (diretrizes) claras, critérios consistentes de avaliação e revisão humana contínua melhoram a qualidade dos outputs e ajudam a garantir maior alinhamento entre o comportamento do modelo e a intenção do usuário.
+    </p>
+
+    <a class="back" href="index.html?lang=pt">← Voltar para Advanced Topics</a>
+  </div>
 
 </div>
+
+<script>
+function setLanguage(lang) {
+  document.getElementById('en').classList.remove('active');
+  document.getElementById('pt').classList.remove('active');
+
+  if (lang === 'pt') {
+    document.getElementById('pt').classList.add('active');
+  } else {
+    document.getElementById('en').classList.add('active');
+  }
+}
+
+const params = new URLSearchParams(window.location.search);
+const lang = params.get('lang') || 'en';
+setLanguage(lang);
+</script>
 
 </body>
 </html>
