@@ -1,29 +1,320 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Core Tópicos IA</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Topics | Thais Granado</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #f7f8fb;
+      color: #222;
+    }
 
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-family: Arial, sans-serif;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cbd5f5;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    .language-switch {
+      text-align: center;
+      padding: 15px;
+      background-color: #e5e7eb;
+    }
+
+    .language-switch button {
+      margin: 5px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background-color: #111827;
+      color: white;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+    }
+
+    nav {
+      background-color: #1f2937;
+      text-align: center;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    h2 {
+      font-size: 56px;
+      margin-bottom: 18px;
+      color: #111;
+    }
+
+    .intro {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      color: #374151;
+      max-width: 860px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    .card a {
+      color: #5a2d82;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 22px;
+      color: #111827;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #2563eb;
+      font-weight: 600;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
+  </style>
+</head>
 <body>
 
-<h1>Core Tópicos IA</h1>
+  <header>
+    <h1>Thais Granado</h1>
+    <p>Legal | Governance | Corporate | Data & AI</p>
+  </header>
 
-<ul>
-<li><a href="human-evaluation.html">Human Evaluation</a></li>
-<li><a href="hallucinations.html">AI Hallucinations</a></li>
-<li><a href="data-quality.html">Data Quality</a></li>
-<li><a href="bias.html">Bias</a></li>
-<li><a href="ambiguity.html">Handling Ambiguity</a></li>
-<li><a href="guidelines.html">Guidelines</a></li>
-<li><a href="consistency.html">Consistency</a></li>
-<li><a href="ranking.html">Response Evaluation</a></li>
-<li><a href="human-in-loop.html">Human-in-the-Loop</a></li>
-<li><a href="decision-making.html">Decision Making</a></li>
-</ul>
+  <div class="language-switch">
+    <button onclick="showLanguage('en')">English</button>
+    <button onclick="showLanguage('pt')">Português</button>
+  </div>
 
-<p><a href="../index.html">← Voltar para Estudos e Reflexões</a></p>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../about.html">About / Sobre</a>
+    <a href="../../projects.html">Projects / Projetos</a>
+    <a href="../../judgement-notes.html">Judgement Notes / Notas</a>
+    <a href="../../certificates.html">Certificates / Certificados</a>
+    <a href="../index.html">Studies / Estudos</a>
+  </nav>
 
+  <div class="container">
+
+    <div id="en" class="lang active">
+      <h2>Core AI Topics</h2>
+      <p class="intro">
+        This section brings together essential topics related to AI evaluation, data quality, human judgement, model behaviour, and decision-making foundations.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Human Evaluation</h3>
+          <p>How human judgement supports accuracy, review, and model quality.</p>
+          <a href="human-evaluation.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>AI Hallucinations</h3>
+          <p>Why systems generate plausible but incorrect outputs and how they are assessed.</p>
+          <a href="hallucinations.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Data Quality</h3>
+          <p>The importance of clean, structured, and reliable datasets in AI systems.</p>
+          <a href="data-quality.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Bias</h3>
+          <p>How biased patterns emerge and why neutrality matters in evaluation.</p>
+          <a href="bias.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Handling Ambiguity</h3>
+          <p>Interpreting unclear data and choosing the most appropriate response.</p>
+          <a href="ambiguity.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Guidelines</h3>
+          <p>The role of instructions and structured criteria in consistent evaluation.</p>
+          <a href="guidelines.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Consistency</h3>
+          <p>Why repeated criteria and aligned judgement are critical to quality.</p>
+          <a href="consistency.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Response Evaluation</h3>
+          <p>Assessing output quality through relevance, clarity, and correctness.</p>
+          <a href="response-evaluation.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Human-in-the-Loop</h3>
+          <p>The role of human participation in review and continuous improvement.</p>
+          <a href="human-in-the-loop.html">Open topic</a>
+        </div>
+
+        <div class="card">
+          <h3>Decision Making</h3>
+          <p>Structured reasoning and judgement in evaluation workflows.</p>
+          <a href="decision-making.html">Open topic</a>
+        </div>
+      </div>
+
+      <a class="back-link" href="../index.html">← Back to Studies & Reflections</a>
+    </div>
+
+    <div id="pt" class="lang">
+      <h2>Core Tópicos IA</h2>
+      <p class="intro">
+        Esta seção reúne temas essenciais relacionados à avaliação de IA, qualidade de dados, julgamento humano, comportamento de modelos e fundamentos de tomada de decisão.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Avaliação Humana</h3>
+          <p>Como o julgamento humano contribui para precisão, revisão e qualidade do modelo.</p>
+          <a href="human-evaluation.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Alucinações em IA</h3>
+          <p>Por que sistemas geram respostas plausíveis, porém incorretas, e como isso é avaliado.</p>
+          <a href="hallucinations.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Qualidade de Dados</h3>
+          <p>A importância de datasets limpos, estruturados e confiáveis em sistemas de IA.</p>
+          <a href="data-quality.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Viés</h3>
+          <p>Como padrões enviesados surgem e por que neutralidade importa na avaliação.</p>
+          <a href="bias.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Lidando com Ambiguidade</h3>
+          <p>Interpretar dados ambíguos e escolher a resposta mais adequada.</p>
+          <a href="ambiguity.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Diretrizes</h3>
+          <p>O papel das instruções e critérios estruturados em avaliações consistentes.</p>
+          <a href="guidelines.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Consistência</h3>
+          <p>Por que critérios repetidos e julgamento alinhado são críticos para qualidade.</p>
+          <a href="consistency.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Avaliação de Respostas</h3>
+          <p>Análise de qualidade considerando relevância, clareza e correção.</p>
+          <a href="response-evaluation.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Human-in-the-Loop</h3>
+          <p>O papel da participação humana na revisão e melhoria contínua.</p>
+          <a href="human-in-the-loop.html">Abrir tópico</a>
+        </div>
+
+        <div class="card">
+          <h3>Tomada de Decisão</h3>
+          <p>Raciocínio estruturado e julgamento em fluxos de avaliação.</p>
+          <a href="decision-making.html">Abrir tópico</a>
+        </div>
+      </div>
+
+      <a class="back-link" href="../index.html">← Voltar para Estudos e Reflexões</a>
+    </div>
+
+  </div>
+
+  <script>
+    function showLanguage(language) {
+      document.getElementById('en').classList.remove('active');
+      document.getElementById('pt').classList.remove('active');
+      document.getElementById(language).classList.add('active');
+    }
+  </script>
 </body>
 </html>
