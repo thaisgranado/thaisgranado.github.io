@@ -1,136 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Me | Thais Granado</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Thais Granado</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f8f9fb;
-            color: #333;
-        }
-
-        header {
-            background-color: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            margin-top: 40px;
-            color: #555;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .back {
-            display: inline-block;
-            margin-top: 30px;
-            text-decoration: none;
-            color: #0077cc;
-        }
-    </style>
+<style>
+body {margin:0;font-family:Arial;background:#f7f8fb;color:#222;}
+header {background:#111827;color:white;padding:30px;text-align:center;}
+.language-switch {text-align:center;padding:10px;background:#e5e7eb;}
+.language-switch button {margin:5px;padding:10px;border:none;background:#111827;color:white;}
+nav {background:#1f2937;text-align:center;padding:12px;}
+nav a {color:white;margin:0 12px;text-decoration:none;}
+.container {max-width:900px;margin:auto;padding:40px;}
+.section {background:white;padding:30px;border-radius:10px;margin-bottom:20px;}
+p {line-height:1.8;font-size:17px;margin-bottom:18px;}
+.lang {display:none;}
+.lang.active {display:block;}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Thais Granado</h1>
-    <p>Legal | Governance | Corporate | Data & AI</p>
+<h1>Thais Granado</h1>
+<p>Legal | Governance | Corporate | Data & AI</p>
 </header>
 
+<div class="language-switch">
+<button onclick="showLanguage('en')">English</button>
+<button onclick="showLanguage('pt')">Português</button>
+</div>
+
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="estudos/index.html">Studies</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="judgement-notes.html">Notes</a>
+<a href="certificates.html">Certificates</a>
 </nav>
 
 <div class="container">
 
-    <h1>About Me</h1>
+<div id="en" class="lang active">
+<div class="section">
+<h2>About Me</h2>
 
-    <h2>🇬🇧 English</h2>
+<p>I have a background in Law and began my career within the Brazilian judicial system, working with legal documentation, case analysis, and later as a certified mediator and conciliator.</p>
 
-    <p>
-        I have a background in Law and built my early professional experience within the judicial system in Brazil, where I worked with legal documentation, case analysis, and later as a certified mediator and conciliator in civil, family, and consumer cases. This experience required structured thinking, responsibility, and the ability to manage sensitive situations with neutrality and professionalism.
-    </p>
+<p>This experience required structured thinking, neutrality, and responsibility, strengthening my ability to analyse information, identify inconsistencies, and make decisions in sensitive environments.</p>
 
-    <p>
-        Through this work, I developed strong analytical skills, attention to detail, and the ability to evaluate information carefully in complex and regulated environments. I became used to working with procedures, documentation standards, and decision-making processes where accuracy and consistency are essential.
-    </p>
+<p>After moving to the United Kingdom, I expanded into corporate, administrative and customer-facing roles, developing adaptability, communication and organisational skills in fast-paced environments.</p>
 
-    <p>
-        After moving to the UK, I expanded my experience into corporate and customer-facing roles, as well as administrative and executive support functions. These roles strengthened my organisational skills, communication, adaptability, and ability to work in fast-paced environments while maintaining a high standard of professionalism.
-    </p>
+<p>Alongside my professional experience, I have been continuously developing my knowledge through studies in corporate governance, data protection, business operations, Python, and artificial intelligence.</p>
 
-    <p>
-        Alongside my professional experience, I have been continuously developing my knowledge through studies in corporate governance, data protection, business operations, and more recently Python and artificial intelligence. I am particularly interested in how structured processes, data, and human judgement interact in modern organisations.
-    </p>
-
-    <p>
-        This portfolio reflects my professional journey, combining my background in law, experience in regulated and corporate environments, and ongoing learning across governance, data, and technology.
-    </p>
-
-
-    <h2>🇧🇷 Português</h2>
-
-    <p>
-        Tenho formação em Direito e iniciei minha trajetória profissional no sistema judiciário no Brasil, atuando com documentação jurídica, análise de processos e, posteriormente, como mediadora e conciliadora certificada em casos cíveis, de família e do consumidor. Essa experiência exigiu pensamento estruturado, responsabilidade e capacidade de lidar com situações sensíveis com neutralidade e profissionalismo.
-    </p>
-
-    <p>
-        Ao longo dessa atuação, desenvolvi forte capacidade analítica, atenção aos detalhes e habilidade de avaliar informações de forma criteriosa em ambientes complexos e regulados. Trabalhei constantemente com procedimentos, padrões de documentação e processos de decisão onde precisão e consistência são essenciais.
-    </p>
-
-    <p>
-        Após me mudar para o Reino Unido, ampliei minha experiência para funções corporativas, atendimento ao cliente e suporte administrativo e executivo. Essas experiências fortaleceram minha organização, comunicação, adaptabilidade e capacidade de atuar em ambientes dinâmicos mantendo alto padrão profissional.
-    </p>
-
-    <p>
-        Paralelamente à minha experiência profissional, venho investindo continuamente no meu desenvolvimento por meio de estudos em governança corporativa, proteção de dados, operações de negócios e, mais recentemente, Python e inteligência artificial. Tenho interesse especial em como processos estruturados, dados e julgamento humano se conectam nas organizações modernas.
-    </p>
-
-    <p>
-        Este portfólio reúne minha trajetória profissional, combinando minha base jurídica, experiência em ambientes regulados e corporativos e meu desenvolvimento contínuo nas áreas de governança, dados e tecnologia.
-    </p>
-
-    <a class="back" href="index.html">← Back to Home</a>
+<p>This portfolio reflects my journey across law, corporate environments, governance, and structured evaluation.</p>
 
 </div>
+</div>
+
+<div id="pt" class="lang">
+<div class="section">
+<h2>Sobre Mim</h2>
+
+<p>Tenho formação em Direito e iniciei minha carreira no sistema judiciário brasileiro, atuando com documentação jurídica, análise de processos e como mediadora e conciliadora.</p>
+
+<p>Essa experiência exigiu pensamento estruturado, neutralidade e responsabilidade, fortalecendo minha capacidade de analisar informações, identificar inconsistências e tomar decisões em ambientes sensíveis.</p>
+
+<p>Após me mudar para o Reino Unido, ampliei minha experiência para ambientes corporativos, administrativos e atendimento ao cliente, desenvolvendo comunicação, organização e adaptabilidade.</p>
+
+<p>Paralelamente, sigo me desenvolvendo com estudos em governança corporativa, proteção de dados, operações, Python e inteligência artificial.</p>
+
+<p>Este portfólio reflete minha trajetória entre direito, ambiente corporativo, governança e avaliação estruturada.</p>
+
+</div>
+</div>
+
+</div>
+
+<script>
+function showLanguage(language){
+document.getElementById('en').classList.remove('active');
+document.getElementById('pt').classList.remove('active');
+document.getElementById(language).classList.add('active');
+}
+</script>
 
 </body>
 </html>
