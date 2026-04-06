@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trust and Safety em IA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f3f4f6;
+    }
+
+    .hero {
+      background: linear-gradient(#0f172a, #16254a);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .lang {
+      text-align: center;
+      padding: 15px;
+      background: #e9eaee;
+    }
+
+    .lang button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .nav {
+      text-align: center;
+      background: #1d2940;
+      padding: 15px;
+    }
+
+    .nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #f5f5f6;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Thais Granado</h1>
+  <p>Legal | Governance | Corporate | Data & AI</p>
+</div>
+
+<div class="lang">
+  <button onclick="setLang('pt')">Português</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<div class="nav">
+  <a href="../index.html">Home</a>
+  <a href="index.html">AI Evaluation Lab</a>
+</div>
+
+<!-- PORTUGUÊS -->
+<div id="pt" class="card">
+
+<h2>Segurança e Confiabilidade em IA</h2>
+<h3>Trust and Safety</h3>
+
+<p>
+Segurança e confiabilidade em sistemas de inteligência artificial referem-se à capacidade do modelo de produzir outputs seguros, apropriados e alinhados ao contexto de uso. Esse conceito envolve evitar conteúdos prejudiciais, incorretos ou potencialmente problemáticos, especialmente em ambientes de larga escala.
+</p>
+
+<p>
+Na prática, avaliadores analisam outputs para identificar riscos, como respostas inadequadas, fora de contexto ou que possam causar impacto negativo ao usuário. Em cenários ambíguos, esse processo exige julgamento cuidadoso para diferenciar respostas aceitáveis de respostas potencialmente problemáticas, mesmo quando ambas parecem plausíveis.
+</p>
+
+<p>
+Quando aspectos de segurança não são avaliados corretamente, outputs inadequados podem ser incorporados ao dataset e reforçados durante o treinamento. Isso impacta tarefas downstream como avaliação, ranqueamento e geração de respostas, reduzindo a confiança no sistema e aumentando riscos em produção.
+</p>
+
+<p>
+Por isso, garantir trust and safety exige diretrizes claras, monitoramento contínuo e avaliação consistente. Esse processo assegura que o modelo produza respostas apropriadas, confiáveis e alinhadas aos padrões esperados de uso.
+</p>
+
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="card hidden">
+
+<h2>Trust and Safety</h2>
+<h3>Trust and Safety</h3>
+
+<p>
+Trust and safety in artificial intelligence systems refers to the model’s ability to generate outputs that are safe, appropriate, and aligned with the intended use context. This includes avoiding harmful, misleading, or problematic content, especially at scale.
+</p>
+
+<p>
+In practice, evaluators analyze outputs to identify risks such as inappropriate responses, lack of context, or potential negative impact on users. In ambiguous scenarios, this requires careful judgment to distinguish between acceptable and potentially problematic responses, even when both appear plausible.
+</p>
+
+<p>
+When safety is not properly evaluated, problematic outputs can be incorporated into datasets and reinforced during training. This affects downstream tasks such as evaluation, ranking, and response generation, reducing system trust and increasing risks in production.
+</p>
+
+<p>
+For that reason, ensuring trust and safety requires clear guidelines, continuous monitoring, and consistent evaluation. This process ensures outputs remain appropriate, reliable, and aligned with expected standards.
+</p>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.getElementById('pt').classList.toggle('hidden', lang==='en');
+  document.getElementById('en').classList.toggle('hidden', lang==='pt');
+}
+</script>
+
+</body>
+</html>
