@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Annotation</title>
+  <title>Anotação de Dados</title>
 
-  <!-- IMPORTANTE: usa o estilo global -->
   <link rel="stylesheet" href="../style.css">
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.style.display = "none";
+      });
+
+      document.querySelectorAll("[data-lang='" + lang + "']").forEach(el => {
+        el.style.display = "block";
+      });
+    }
+
+    window.onload = () => setLanguage('pt');
+  </script>
 </head>
 
 <body>
 
 <header class="hero">
-  <h1>Data Annotation</h1>
+  <h1 data-lang="pt">Anotação de Dados</h1>
+  <h1 data-lang="en">Data Annotation</h1>
+
   <p>AI Evaluation Lab | Data Quality | Human Judgment</p>
 </header>
+
+<div class="lang-bar">
+  <button class="lang-btn" onclick="setLanguage('en')">English</button>
+  <button class="lang-btn" onclick="setLanguage('pt')">Português</button>
+</div>
 
 <nav class="top-nav">
   <a href="../index.html">Home</a>
@@ -23,27 +43,57 @@
 
 <section class="content">
 
-  <h2>Data Annotation</h2>
+  <!-- PORTUGUÊS -->
+  <div data-lang="pt">
 
-  <p>
-    Data annotation is a fundamental process in artificial intelligence systems, as it defines how models interpret and learn from data. By labeling and classifying information, annotation establishes the structure that guides model behavior and directly influences output quality.
-  </p>
+    <h2>Anotação de Dados</h2>
 
-  <p>
-    In practice, annotators apply predefined guidelines to ensure consistent labeling across datasets. This process requires attention to detail, contextual understanding, and structured decision-making, particularly in ambiguous scenarios where multiple interpretations are possible.
-  </p>
+    <p>
+      A anotação de dados é um processo fundamental em sistemas de inteligência artificial, pois define como os modelos interpretam e aprendem a partir das informações disponíveis. Ao rotular e classificar dados, a anotação estabelece a estrutura que orienta o comportamento do modelo e influencia diretamente a qualidade dos outputs.
+    </p>
 
-  <p>
-    When annotation is inconsistent or inaccurate, errors can be introduced into the dataset and amplified during training. This affects downstream tasks such as classification, ranking, and response evaluation, reducing model reliability and alignment.
-  </p>
+    <p>
+      Na prática, anotadores seguem diretrizes definidas para garantir consistência na aplicação de rótulos ao longo do dataset. Esse processo exige atenção aos detalhes, compreensão contextual e tomada de decisão estruturada, especialmente em cenários ambíguos, onde múltiplas interpretações são possíveis.
+    </p>
 
-  <p>
-    For that reason, effective annotation processes depend on clear guidelines, annotator training, and continuous review. This ensures consistency, improves data quality, and supports stable and reliable model performance.
-  </p>
+    <p>
+      Quando a anotação é inconsistente ou imprecisa, erros podem ser incorporados ao conjunto de dados e amplificados durante o treinamento. Isso impacta tarefas downstream, como classificação, ranqueamento e avaliação de respostas, reduzindo a confiabilidade e o alinhamento do modelo.
+    </p>
 
-  <br>
+    <p>
+      Por isso, processos eficazes de anotação dependem de diretrizes claras, treinamento de anotadores e revisão contínua. Esse ciclo garante consistência, melhora a qualidade dos dados e sustenta um desempenho estável e confiável do modelo.
+    </p>
 
-  <a href="index.html">← Back to AI Evaluation Lab</a>
+    <br>
+    <a href="index.html">← Voltar para AI Evaluation Lab</a>
+
+  </div>
+
+  <!-- INGLÊS -->
+  <div data-lang="en">
+
+    <h2>Data Annotation</h2>
+
+    <p>
+      Data annotation is a fundamental process in artificial intelligence systems, as it defines how models interpret and learn from data. By labeling and classifying information, annotation establishes the structure that guides model behavior and directly influences output quality.
+    </p>
+
+    <p>
+      In practice, annotators follow predefined guidelines to ensure consistent labeling across datasets. This process requires attention to detail, contextual understanding, and structured decision-making, especially in ambiguous scenarios where multiple interpretations are possible.
+    </p>
+
+    <p>
+      When annotation is inconsistent or inaccurate, errors can be introduced into the dataset and amplified during training. This affects downstream tasks such as classification, ranking, and response evaluation, reducing model reliability and alignment.
+    </p>
+
+    <p>
+      For that reason, effective annotation processes depend on clear guidelines, annotator training, and continuous review. This ensures consistency, improves data quality, and supports stable and reliable model performance.
+    </p>
+
+    <br>
+    <a href="index.html">← Back to AI Evaluation Lab</a>
+
+  </div>
 
 </section>
 
