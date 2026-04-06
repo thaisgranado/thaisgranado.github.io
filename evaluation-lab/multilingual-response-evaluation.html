@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avaliação Multilíngue de Respostas em IA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f3f4f6;
+    }
+
+    .hero {
+      background: linear-gradient(#0f172a, #16254a);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .lang {
+      text-align: center;
+      padding: 15px;
+      background: #e9eaee;
+    }
+
+    .lang button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .nav {
+      text-align: center;
+      background: #1d2940;
+      padding: 15px;
+    }
+
+    .nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #f5f5f6;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Thais Granado</h1>
+  <p>Legal | Governance | Corporate | Data & AI</p>
+</div>
+
+<div class="lang">
+  <button onclick="setLang('pt')">Português</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<div class="nav">
+  <a href="../index.html">Home</a>
+  <a href="index.html">AI Evaluation Lab</a>
+</div>
+
+<!-- PORTUGUÊS -->
+<div id="pt" class="card">
+
+<h2>Avaliação Multilíngue de Respostas em IA</h2>
+<h3>Multilingual Response Evaluation</h3>
+
+<p>
+A avaliação multilíngue de respostas em sistemas de inteligência artificial consiste em analisar outputs gerados em diferentes idiomas para garantir que mantenham precisão, relevância e alinhamento com o objetivo da tarefa. Esse processo é essencial para assegurar que a qualidade do modelo permaneça consistente entre línguas e contextos culturais distintos.
+</p>
+
+<p>
+Na prática, avaliadores comparam respostas em diferentes idiomas para verificar se o significado foi preservado, se a resposta permanece clara e se o conteúdo continua útil para o usuário. Em cenários ambíguos, esse processo exige julgamento estruturado para distinguir entre uma variação linguística aceitável e uma resposta que altera o sentido, reduz a qualidade ou perde alinhamento com o prompt original.
+</p>
+
+<p>
+Quando a avaliação multilíngue é inconsistente, erros de interpretação, traduções inadequadas ou respostas culturalmente desalinhadas podem ser incorporados ao dataset e reforçados durante o treinamento. Isso impacta tarefas downstream como anotação, ranqueamento, validação e geração de respostas, reduzindo a confiabilidade do sistema em aplicações globais.
+</p>
+
+<p>
+Por isso, a avaliação multilíngue depende de fluência real no idioma, diretrizes claras e aplicação consistente de critérios entre diferentes línguas. Esse processo melhora a consistência dos outputs, reduz erros de interpretação e garante respostas mais precisas, úteis e alinhadas ao contexto de uso.
+</p>
+
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="card hidden">
+
+<h2>Multilingual Response Evaluation</h2>
+<h3>Multilingual Response Evaluation</h3>
+
+<p>
+Multilingual response evaluation in artificial intelligence systems consists of analysing outputs generated in different languages to ensure that they maintain accuracy, relevance, and alignment with the task objective. This process is essential to guarantee that model quality remains consistent across languages and distinct cultural contexts.
+</p>
+
+<p>
+In practice, evaluators compare responses across different languages to verify whether meaning has been preserved, whether the response remains clear, and whether the content is still useful to the user. In ambiguous scenarios, this requires structured judgment to distinguish between acceptable linguistic variation and responses that alter meaning, reduce quality, or lose alignment with the original prompt.
+</p>
+
+<p>
+When multilingual evaluation is inconsistent, interpretation errors, inadequate translations, or culturally misaligned responses may be incorporated into the dataset and reinforced during training. This affects downstream tasks such as annotation, ranking, validation, and response generation, reducing system reliability in global applications.
+</p>
+
+<p>
+For that reason, multilingual evaluation depends on real language fluency, clear guidelines, and consistent application of criteria across different languages. This process improves output consistency, reduces interpretation errors, and ensures responses that are more accurate, useful, and aligned with the usage context.
+</p>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.getElementById('pt').classList.toggle('hidden', lang==='en');
+  document.getElementById('en').classList.toggle('hidden', lang==='pt');
+}
+</script>
+
+</body>
+</html>
