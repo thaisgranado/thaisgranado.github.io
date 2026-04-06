@@ -1,42 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anotação de Dados em IA</title>
-<link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Annotation</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f5f6f8;
+      color: #1a1a1a;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .lang-bar {
+      background: #e9eaee;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .lang-btn {
+      background: #0f1b36;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .top-nav {
+      background: #1d2940;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .top-nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Anotação de Dados em IA</h1>
-  <h2>Data Annotation</h2>
-</header>
+  <header class="hero">
+    <h1>Data Annotation</h1>
+  </header>
 
-<main>
+  <nav class="top-nav">
+    <a href="../index.html">Home</a>
+    <a href="index.html">AI Evaluation Lab</a>
+  </nav>
 
-<p>
-A anotação de dados é um processo fundamental no desenvolvimento de sistemas de inteligência artificial, pois define como os modelos interpretam e aprendem a partir das informações disponíveis. A forma como os dados são rotulados influencia diretamente a qualidade dos outputs (saídas) gerados.
-</p>
+  <div class="content">
 
-<p>
-Na prática, anotadores aplicam diretrizes para classificar e rotular dados de forma consistente ao longo do dataset (conjunto de dados). Esse processo exige atenção aos detalhes, compreensão do contexto e aplicação uniforme de critérios. Em cenários ambíguos, é necessário tomar decisões estruturadas para garantir alinhamento entre casos semelhantes.
-</p>
+    <p>
+      Data annotation is a fundamental process in artificial intelligence systems, as it defines how models interpret and learn from data. By labeling and classifying information, annotation establishes the structure that guides model behavior and directly influences output quality.
+    </p>
 
-<p>
-Quando a anotação é inconsistente ou imprecisa, erros são incorporados ao dataset e amplificados durante o treinamento. Isso impacta tarefas downstream como classificação, ranqueamento e avaliação de respostas, reduzindo a confiabilidade do modelo e gerando outputs desalinhados com o objetivo da tarefa.
-</p>
+    <p>
+      In practice, annotators apply predefined guidelines to ensure consistent labeling across datasets. This process requires attention to detail, contextual understanding, and the ability to make structured decisions, especially in ambiguous scenarios where multiple interpretations are possible.
+    </p>
 
-<p>
-Por isso, a anotação deve seguir diretrizes claras, treinamento adequado e revisão contínua. Esse processo reduz variações entre decisões, melhora a qualidade dos dados e garante que o modelo aprenda padrões corretos e produza resultados mais consistentes e confiáveis.
-</p>
+    <p>
+      When annotation is inconsistent or inaccurate, errors can be introduced into the dataset and amplified during training. This affects downstream tasks such as classification, ranking, and response evaluation, reducing model reliability.
+    </p>
 
-</main>
+    <p>
+      For that reason, effective annotation processes rely on clear guidelines, training, and continuous review. This ensures consistency, improves data quality, and supports stable model performance.
+    </p>
 
-<footer>
-  <a href="index.html">← Back to AI Evaluation Lab</a>
-</footer>
+  </div>
 
 </body>
 </html>
