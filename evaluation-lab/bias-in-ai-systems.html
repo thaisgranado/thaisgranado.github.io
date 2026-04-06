@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viés em Sistemas de IA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f3f4f6;
+    }
+
+    .hero {
+      background: linear-gradient(#0f172a, #16254a);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .lang {
+      text-align: center;
+      padding: 15px;
+      background: #e9eaee;
+    }
+
+    .lang button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .nav {
+      text-align: center;
+      background: #1d2940;
+      padding: 15px;
+    }
+
+    .nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #f5f5f6;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Thais Granado</h1>
+  <p>Legal | Governance | Corporate | Data & AI</p>
+</div>
+
+<div class="lang">
+  <button onclick="setLang('pt')">Português</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<div class="nav">
+  <a href="../index.html">Home</a>
+  <a href="index.html">AI Evaluation Lab</a>
+</div>
+
+<!-- PORTUGUÊS -->
+<div id="pt" class="card">
+
+<h2>Viés em Sistemas de IA</h2>
+<h3>Bias in AI Systems</h3>
+
+<p>
+O viés em sistemas de inteligência artificial ocorre quando o modelo produz outputs distorcidos ou desbalanceados devido a padrões presentes nos dados de treinamento. Esses padrões podem refletir desigualdades, omissões ou associações incorretas, impactando a qualidade e a equidade das respostas.
+</p>
+
+<p>
+Na prática, avaliadores analisam outputs para identificar inconsistências entre casos semelhantes, padrões de favorecimento ou tratamento desigual. Em cenários ambíguos, esse processo exige julgamento estruturado para determinar se diferenças nas respostas são justificadas pelo contexto ou indicam viés no comportamento do modelo.
+</p>
+
+<p>
+Quando o viés não é identificado, ele pode ser incorporado ao dataset e amplificado durante o treinamento. Isso impacta tarefas downstream como classificação, ranqueamento e geração de respostas, reduzindo a confiabilidade do sistema e podendo comprometer a experiência do usuário.
+</p>
+
+<p>
+Por isso, a mitigação de viés depende de diretrizes claras, diversidade de dados e avaliação contínua. Esse processo melhora a consistência das decisões, reduz distorções e garante outputs mais equilibrados e alinhados ao objetivo da tarefa.
+</p>
+
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="card hidden">
+
+<h2>Bias in AI Systems</h2>
+<h3>Bias in AI Systems</h3>
+
+<p>
+Bias in artificial intelligence systems occurs when a model produces distorted or unbalanced outputs due to patterns present in the training data. These patterns may reflect inequalities, omissions, or incorrect associations, directly affecting response quality and fairness.
+</p>
+
+<p>
+In practice, evaluators analyze outputs to identify inconsistencies across similar cases, patterns of favoritism, or unequal treatment. In ambiguous scenarios, this requires structured judgment to determine whether differences are context-driven or indicative of biased model behavior.
+</p>
+
+<p>
+When bias is not identified, it can be incorporated into the dataset and amplified during training. This affects downstream tasks such as classification, ranking, and response generation, reducing system reliability and potentially impacting user experience.
+</p>
+
+<p>
+For that reason, bias mitigation depends on clear guidelines, diverse data, and continuous evaluation. This process improves decision consistency, reduces distortions, and ensures outputs are more balanced and aligned with the task objective.
+</p>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.getElementById('pt').classList.toggle('hidden', lang==='en');
+  document.getElementById('en').classList.toggle('hidden', lang==='pt');
+}
+</script>
+
+</body>
+</html>
