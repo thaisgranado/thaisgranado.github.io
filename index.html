@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thais Granado</title>
+  <title>AI Evaluation Lab</title>
 
   <style>
     body {
@@ -14,99 +14,146 @@
     }
 
     .hero {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: linear-gradient(#0f172a, #1e2b4a);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     .hero h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 42px;
     }
 
     .hero p {
       margin-top: 10px;
-      font-size: 16px;
+      font-size: 18px;
+      opacity: 0.9;
     }
 
-    .lang-bar {
-      background: #e9eaee;
+    .author {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .lang {
       text-align: center;
-      padding: 15px;
+      margin: 20px 0;
     }
 
-    .lang-btn {
-      background: #0f1b36;
+    .lang button {
+      background: #16254a;
       color: white;
       border: none;
-      padding: 12px 24px;
+      padding: 10px 20px;
       margin: 5px;
       border-radius: 10px;
       cursor: pointer;
     }
 
-    .top-nav {
+    .nav {
       background: #1d2940;
       text-align: center;
       padding: 15px;
     }
 
-    .top-nav a {
+    .nav a {
       color: white;
-      text-decoration: none;
       margin: 10px;
-      display: inline-block;
+      text-decoration: none;
     }
 
-    .content {
-      max-width: 900px;
+    .container {
+      max-width: 1100px;
       margin: 40px auto;
       padding: 20px;
+    }
+
+    .card {
+      background: #f0f1f3;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .mini-card {
       background: white;
+      padding: 20px;
       border-radius: 12px;
     }
+
+    .mini-card a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <header class="hero">
-    <h1>Thais Granado</h1>
-    <p>Legal | Governance | Corporate | Data & AI</p>
-  </header>
+<!-- HERO -->
+<div class="hero">
+  <h1>AI Evaluation Lab</h1>
+  <p>Human Judgement • Data Quality • AI Systems</p>
+  <div class="author">by Thais Granado</div>
+</div>
 
-  <div class="lang-bar">
-    <button class="lang-btn">English</button>
-    <button class="lang-btn">Português</button>
+<!-- LANGUAGE -->
+<div class="lang">
+  <button>English</button>
+  <button>Português</button>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="evaluation-lab/index.html">AI Evaluation Lab</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <div class="card">
+    <h2>AI Evaluation Portfolio</h2>
+    <p>
+      This portfolio focuses on structured evaluation of AI systems, including data quality,
+      human judgement, ambiguity handling, and response validation.
+    </p>
   </div>
 
-  <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About / Sobre</a>
-    <a href="projects.html">Projects / Projetos</a>
-    <a href="evaluation-lab/index.html">AI Evaluation Lab</a>
-    <a href="JUDGEMENT-NOTES.HTML">Judgement Notes / Notas</a>
-    <a href="CERTIFICATES.HTML">Certificates / Certificados</a>
-    <a href="estudos/index.html">Studies / Estudos</a>
-  </nav>
+  <div class="grid">
 
-  <div class="content">
-    <h2>Professional Portfolio</h2>
+    <div class="mini-card">
+      <h3>AI Evaluation Lab</h3>
+      <p>Explore structured evaluation topics used in real AI systems.</p>
+      <a href="evaluation-lab/index.html">Open</a>
+    </div>
 
-    <p>
-      Welcome to my professional portfolio. My background combines Law, regulated environments, corporate and executive support, and AI data evaluation.
-    </p>
+    <div class="mini-card">
+      <h3>Judgement Notes</h3>
+      <p>Reflections on decision-making, governance, and AI systems.</p>
+      <a href="JUDGEMENT-NOTES.HTML">Open</a>
+    </div>
 
-    <p>
-      I began my career within the Brazilian judicial system, working with legal documentation and case analysis, later acting as a certified mediator and conciliator.
-    </p>
-
-    <p>
-      After moving to the United Kingdom, I expanded my experience into corporate, administrative, and data-focused roles.
-    </p>
+    <div class="mini-card">
+      <h3>Studies</h3>
+      <p>Technical learning and structured notes.</p>
+      <a href="estudos/index.html">Open</a>
+    </div>
 
   </div>
+
+</div>
 
 </body>
 </html>
