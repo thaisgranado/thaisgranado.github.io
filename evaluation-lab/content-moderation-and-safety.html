@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moderação de Conteúdo e Segurança em IA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f3f4f6;
+    }
+
+    .hero {
+      background: linear-gradient(#0f172a, #16254a);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .lang {
+      text-align: center;
+      padding: 15px;
+      background: #e9eaee;
+    }
+
+    .lang button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .nav {
+      text-align: center;
+      background: #1d2940;
+      padding: 15px;
+    }
+
+    .nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #f5f5f6;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Thais Granado</h1>
+  <p>Legal | Governance | Corporate | Data & AI</p>
+</div>
+
+<div class="lang">
+  <button onclick="setLang('pt')">Português</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<div class="nav">
+  <a href="../index.html">Home</a>
+  <a href="index.html">AI Evaluation Lab</a>
+</div>
+
+<!-- PORTUGUÊS -->
+<div id="pt" class="card">
+
+<h2>Moderação de Conteúdo e Segurança em IA</h2>
+<h3>Content Moderation and Safety</h3>
+
+<p>
+A moderação de conteúdo em sistemas de inteligência artificial refere-se ao processo de identificar, filtrar e avaliar outputs que possam ser inadequados, prejudiciais ou fora de contexto. Esse processo é essencial para garantir que o modelo opere dentro de limites seguros e alinhados ao uso pretendido.
+</p>
+
+<p>
+Na prática, avaliadores analisam respostas para identificar conteúdos sensíveis, potencialmente problemáticos ou desalinhados com diretrizes. Em cenários ambíguos, esse processo exige julgamento cuidadoso para diferenciar entre conteúdo aceitável e conteúdo que pode representar risco, mesmo quando a distinção não é imediata.
+</p>
+
+<p>
+Quando a moderação não é aplicada de forma consistente, outputs inadequados podem ser incorporados ao dataset e reforçados durante o treinamento. Isso impacta tarefas downstream como avaliação, ranqueamento e geração de respostas, reduzindo a segurança e a confiabilidade do sistema.
+</p>
+
+<p>
+Por isso, a moderação eficaz depende de diretrizes claras, aplicação consistente de critérios e revisão contínua. Esse processo reduz riscos, melhora a qualidade dos outputs e assegura que o modelo produza respostas apropriadas e alinhadas aos padrões de uso.
+</p>
+
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="card hidden">
+
+<h2>Content Moderation and Safety</h2>
+<h3>Content Moderation and Safety</h3>
+
+<p>
+Content moderation in artificial intelligence systems refers to the process of identifying, filtering, and evaluating outputs that may be inappropriate, harmful, or out of context. This process is essential to ensure that the model operates within safe and intended boundaries.
+</p>
+
+<p>
+In practice, evaluators analyse responses to identify sensitive, potentially harmful, or guideline-violating content. In ambiguous scenarios, this requires careful judgment to distinguish between acceptable content and content that may pose risks, even when the distinction is not immediately clear.
+</p>
+
+<p>
+When moderation is not applied consistently, inappropriate outputs may be incorporated into datasets and reinforced during training. This affects downstream tasks such as evaluation, ranking, and response generation, reducing system safety and reliability.
+</p>
+
+<p>
+For that reason, effective moderation depends on clear guidelines, consistent application of criteria, and continuous review. This process reduces risk, improves output quality, and ensures that the model produces appropriate and safe responses aligned with expected standards.
+</p>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.getElementById('pt').classList.toggle('hidden', lang==='en');
+  document.getElementById('en').classList.toggle('hidden', lang==='pt');
+}
+</script>
+
+</body>
+</html>
