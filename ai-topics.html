@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <title>AI Topics</title>
@@ -11,6 +11,19 @@ body {
     margin: 40px auto;
     padding: 0 20px;
     line-height: 1.6;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+body {
+    font-size: 16px;
 }
 button {
     position: fixed;
@@ -47,11 +60,21 @@ function translatePage() {
 
 <body>
 
-<button onclick="translatePage()">Translate</button>
+<button onclick="translatePage()">Translate to English</button>
 
 <div id="google_translate_element" style="display:none;"></div>
 
+
+<h1>AI Topics — Data Evaluation & Quality</h1>
+
+<p>
+Structured notes covering key concepts in AI data evaluation, annotation, 
+governance, and model behaviour. These topics reflect practical decision-making 
+in real-world AI systems.
+</p>
+
 <h2>1. Avaliação Humana de Dados</h2>
+
 <p>A avaliação humana de dados é o processo pelo qual especialistas analisam outputs (saídas) gerados por sistemas de inteligência artificial para garantir que sejam precisos, úteis e alinhados ao objetivo da tarefa. Modelos de linguagem não possuem capacidade completa de julgamento contextual, tornando a intervenção humana essencial para validar a qualidade dos resultados.</p>
 <p>Na prática, avaliadores comparam respostas e selecionam aquela que melhor atende ao objetivo da tarefa com base em precisão factual, relevância, completude e aderência às instruções (instruction adherence). A decisão deve priorizar a resposta mais útil para o usuário, especialmente em cenários ambíguos onde múltiplas opções parecem plausíveis.</p>
 <p>Quando a avaliação humana não é estruturada, outputs incorretos são incorporados ao dataset (conjunto de dados) e reforçados durante o treinamento, comprometendo tarefas downstream como anotação (annotation), ranqueamento (ranking) e validação (validation).</p>
@@ -119,7 +142,7 @@ function translatePage() {
 <p>Na prática, avaliadores verificam se os outputs preservam o significado original e são adequados ao contexto local, selecionando respostas com base em precisão, relevância e adequação cultural definidas por diretrizes (guidelines) específicas para cada idioma. A decisão deve rejeitar respostas gramaticalmente corretas, mas culturalmente inadequadas.</p>
 <p>Quando avaliadores sem fluência real no idioma-alvo realizam a avaliação, erros linguísticos e culturais são incorporados ao dataset (conjunto de dados), comprometendo tarefas downstream como anotação e ranqueamento (ranking).</p>
 <p>Por isso, modelos multilíngues exigem avaliadores fluentes, diretrizes adaptadas por idioma e revisão humana contínua. Esse processo garante consistência entre línguas e outputs adequados a cada contexto cultural.</p>
-<p>Por isso, processos estruturados de coleta combinam critérios claros, validação contínua e monitoramento da qualidade. Esse ciclo garante datasets mais robustos e modelos mais confiáveis em produção.</p>
+
   <h2>13. Avaliação Multilíngue de Respostas em IA</h2>
 <p>A avaliação multilíngue de respostas é o processo de analisar outputs (saídas) em diferentes idiomas para garantir que sejam precisos, relevantes e adequados ao contexto linguístico e cultural de cada mercado.</p>
 <p>Na prática, avaliadores comparam outputs em múltiplos idiomas e selecionam aqueles que melhor preservam o significado original com base em precisão factual, consistência entre idiomas e adequação cultural. A decisão deve rejeitar respostas que, embora corretas gramaticalmente, não atendam ao contexto local.</p>
