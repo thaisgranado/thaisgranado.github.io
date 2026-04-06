@@ -1,159 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thais Granado | Professional Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thais Granado</title>
 
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #f7f8fb;
-color: #222;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #1a1a1a;
+    }
 
-header {
-background: linear-gradient(135deg, #0f172a, #1e293b);
-color: white;
-padding: 30px 20px;
-text-align: center;
-}
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-header h1 {
-margin: 0;
-font-size: 34px;
-}
+    .hero h1 {
+      margin: 0;
+      font-size: 36px;
+    }
 
-header p {
-margin-top: 10px;
-color: #cbd5f5;
-font-size: 16px;
-}
+    .hero p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
 
-.language-switch {
-text-align: center;
-padding: 15px;
-background-color: #e5e7eb;
-}
+    .lang-bar {
+      background: #e9eaee;
+      text-align: center;
+      padding: 15px;
+    }
 
-.language-switch button {
-margin: 5px;
-padding: 10px 18px;
-border: none;
-border-radius: 6px;
-background-color: #111827;
-color: white;
-cursor: pointer;
-}
+    .lang-btn {
+      background: #0f1b36;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-nav {
-background-color: #1f2937;
-text-align: center;
-padding: 15px;
-}
+    .top-nav {
+      background: #1d2940;
+      text-align: center;
+      padding: 15px;
+    }
 
-nav a {
-color: white;
-margin: 0 15px;
-text-decoration: none;
-font-size: 15px;
-}
+    .top-nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+    }
 
-.container {
-max-width: 1000px;
-margin: auto;
-padding: 40px 20px;
-}
-
-.section {
-background: white;
-padding: 30px;
-border-radius: 12px;
-margin-bottom: 25px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-h2 {
-margin-top: 0;
-font-size: 28px;
-}
-
-p {
-line-height: 1.8;
-font-size: 17px;
-margin-bottom: 20px;
-}
-
-.lang {
-display: none;
-}
-
-.lang.active {
-display: block;
-}
-</style>
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<h1>Thais Granado</h1>
-<p>Legal | Governance | Corporate | Data & AI</p>
-</header>
+  <header class="hero">
+    <h1>Thais Granado</h1>
+    <p>Legal | Governance | Corporate | Data & AI</p>
+  </header>
 
-<div class="language-switch">
-<button onclick="showLanguage('en')">English</button>
-<button onclick="showLanguage('pt')">Português</button>
-</div>
+  <div class="lang-bar">
+    <button class="lang-btn">English</button>
+    <button class="lang-btn">Português</button>
+  </div>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About / Sobre</a>
-<a href="projects.html">Projects / Projetos</a>
-<a href="judgement-notes.html">Judgement Notes / Notas</a>
-<a href="estudos/index.html">Studies / Estudos</a>
-<a href="certificates.html">Certificates / Certificados</a>
-</nav>
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About / Sobre</a>
+    <a href="projects.html">Projects / Projetos</a>
+    <a href="evaluation-lab/index.html">AI Evaluation Lab</a>
+    <a href="JUDGEMENT-NOTES.HTML">Judgement Notes / Notas</a>
+    <a href="CERTIFICATES.HTML">Certificates / Certificados</a>
+    <a href="estudos/index.html">Studies / Estudos</a>
+  </nav>
 
-<div class="container">
+  <div class="content">
+    <h2>Professional Portfolio</h2>
 
-<div id="en" class="lang active">
-<div class="section">
-<h2>Professional Portfolio</h2>
-<p>Welcome to my professional portfolio. My background combines Law, regulated environments, corporate and executive support, customer-facing work, and data annotation and evaluation.</p>
+    <p>
+      Welcome to my professional portfolio. My background combines Law, regulated environments, corporate and executive support, and AI data evaluation.
+    </p>
 
-<p>I began my career within the Brazilian judicial system, working with legal documentation, case analysis, and later as a certified mediator and conciliator. This experience strengthened my structured thinking, attention to detail, and decision-making in sensitive contexts.</p>
+    <p>
+      I began my career within the Brazilian judicial system, working with legal documentation and case analysis, later acting as a certified mediator and conciliator.
+    </p>
 
-<p>After moving to the United Kingdom, I expanded my experience into corporate, administrative, and customer-facing roles, while continuing my studies in governance, data protection, Python, and artificial intelligence.</p>
+    <p>
+      After moving to the United Kingdom, I expanded my experience into corporate, administrative, and data-focused roles.
+    </p>
 
-<p>This portfolio brings together my professional journey, projects, and reflections across law, governance, data, and structured evaluation.</p>
-</div>
-</div>
-
-<div id="pt" class="lang">
-<div class="section">
-<h2>Portfólio Profissional</h2>
-
-<p>Bem-vinda(o) ao meu portfólio profissional. Minha trajetória combina Direito, ambientes regulados, suporte corporativo e executivo, atendimento ao cliente e experiência com anotação e avaliação de dados.</p>
-
-<p>Iniciei minha carreira no sistema judiciário brasileiro, atuando com documentação jurídica, análise de processos e como mediadora e conciliadora certificada. Essa experiência fortaleceu meu pensamento estruturado, atenção aos detalhes e tomada de decisão em contextos sensíveis.</p>
-
-<p>Após me mudar para o Reino Unido, ampliei minha experiência para ambientes corporativos, administrativos e atendimento ao cliente, enquanto continuo meus estudos em governança, proteção de dados, Python e inteligência artificial.</p>
-
-<p>Este portfólio reúne minha trajetória profissional, projetos e reflexões nas áreas de direito, governança, dados e avaliação estruturada.</p>
-</div>
-</div>
-
-</div>
-
-<script>
-function showLanguage(language) {
-document.getElementById('en').classList.remove('active');
-document.getElementById('pt').classList.remove('active');
-document.getElementById(language).classList.add('active');
-}
-</script>
+  </div>
 
 </body>
 </html>
