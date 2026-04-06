@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consistência na Avaliação em IA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f3f4f6;
+    }
+
+    .hero {
+      background: linear-gradient(#0f172a, #16254a);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .lang {
+      text-align: center;
+      padding: 15px;
+      background: #e9eaee;
+    }
+
+    .lang button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .nav {
+      text-align: center;
+      background: #1d2940;
+      padding: 15px;
+    }
+
+    .nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #f5f5f6;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Thais Granado</h1>
+  <p>Legal | Governance | Corporate | Data & AI</p>
+</div>
+
+<div class="lang">
+  <button onclick="setLang('pt')">Português</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<div class="nav">
+  <a href="../index.html">Home</a>
+  <a href="index.html">AI Evaluation Lab</a>
+</div>
+
+<!-- PORTUGUÊS -->
+<div id="pt" class="card">
+
+<h2>Consistência na Avaliação em IA</h2>
+<h3>Consistency in Evaluation</h3>
+
+<p>
+A consistência na avaliação em sistemas de inteligência artificial refere-se à capacidade de aplicar os mesmos critérios de julgamento de forma uniforme em casos semelhantes. Esse princípio é essencial para garantir que decisões não variem de forma arbitrária entre diferentes outputs ou avaliadores.
+</p>
+
+<p>
+Na prática, avaliadores utilizam diretrizes para assegurar que respostas com características semelhantes recebam avaliações equivalentes. Em cenários ambíguos, esse processo exige equilíbrio entre interpretação contextual e aplicação consistente de critérios, evitando decisões contraditórias entre casos comparáveis.
+</p>
+
+<p>
+Quando a consistência não é mantida, o dataset pode incorporar julgamentos conflitantes, levando o modelo a aprender padrões instáveis. Isso impacta tarefas downstream como ranqueamento, validação e geração de respostas, reduzindo a previsibilidade e a confiabilidade do sistema.
+</p>
+
+<p>
+Por isso, garantir consistência exige diretrizes claras, calibração entre avaliadores e revisão contínua. Esse processo reduz variações de julgamento, melhora a qualidade dos dados e assegura que o modelo produza outputs mais estáveis e alinhados ao objetivo da tarefa.
+</p>
+
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="card hidden">
+
+<h2>Consistency in Evaluation</h2>
+<h3>Consistency in Evaluation</h3>
+
+<p>
+Consistency in evaluation refers to the ability to apply the same judgment criteria uniformly across similar cases. This principle is essential to ensure that decisions do not vary arbitrarily between different outputs or evaluators.
+</p>
+
+<p>
+In practice, evaluators use guidelines to ensure that responses with similar characteristics receive equivalent evaluations. In ambiguous scenarios, this requires balancing contextual interpretation with consistent application of criteria, avoiding contradictory decisions across comparable cases.
+</p>
+
+<p>
+When consistency is not maintained, conflicting judgments can be incorporated into datasets, leading the model to learn unstable patterns. This affects downstream tasks such as ranking, validation, and response generation, reducing system predictability and reliability.
+</p>
+
+<p>
+For that reason, ensuring consistency requires clear guidelines, evaluator calibration, and continuous review. This process reduces judgment variability, improves data quality, and ensures that the model produces more stable and task-aligned outputs.
+</p>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.getElementById('pt').classList.toggle('hidden', lang==='en');
+  document.getElementById('en').classList.toggle('hidden', lang==='pt');
+}
+</script>
+
+</body>
+</html>
