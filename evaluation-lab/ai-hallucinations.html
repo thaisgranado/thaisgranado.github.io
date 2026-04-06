@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alucinações em IA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f3f4f6;
+    }
+
+    .hero {
+      background: linear-gradient(#0f172a, #16254a);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .lang {
+      text-align: center;
+      padding: 15px;
+      background: #e9eaee;
+    }
+
+    .lang button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .nav {
+      text-align: center;
+      background: #1d2940;
+      padding: 15px;
+    }
+
+    .nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .card {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #f5f5f6;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Thais Granado</h1>
+  <p>Legal | Governance | Corporate | Data & AI</p>
+</div>
+
+<div class="lang">
+  <button onclick="setLang('pt')">Português</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<div class="nav">
+  <a href="../index.html">Home</a>
+  <a href="index.html">AI Evaluation Lab</a>
+</div>
+
+<!-- PORTUGUÊS -->
+<div id="pt" class="card">
+
+<h2>Alucinações em IA</h2>
+<h3>AI Hallucinations</h3>
+
+<p>
+Alucinações em sistemas de inteligência artificial ocorrem quando o modelo gera outputs incorretos, inventados ou não suportados por informações verificáveis. Essas respostas podem parecer coerentes e bem estruturadas, o que torna esse tipo de erro difícil de identificar sem validação cuidadosa.
+</p>
+
+<p>
+Na prática, avaliadores verificam se o output está alinhado com fatos conhecidos e com o contexto do prompt. Em cenários ambíguos, esse processo exige distinguir entre respostas plausíveis e respostas factualmente incorretas, mesmo quando ambas apresentam estrutura linguística semelhante.
+</p>
+
+<p>
+Quando alucinações não são identificadas, elas podem ser incorporadas ao dataset e reforçadas durante o treinamento. Isso impacta tarefas downstream como avaliação, ranqueamento e geração de respostas, reduzindo a confiabilidade do sistema e aumentando o risco de disseminação de informações incorretas.
+</p>
+
+<p>
+Por isso, a mitigação de alucinações depende de validação factual consistente, aplicação de diretrizes claras e revisão contínua. Esse processo melhora a precisão dos outputs e garante maior alinhamento com informações verificáveis.
+</p>
+
+</div>
+
+<!-- ENGLISH -->
+<div id="en" class="card hidden">
+
+<h2>AI Hallucinations</h2>
+<h3>AI Hallucinations</h3>
+
+<p>
+AI hallucinations occur when a model generates outputs that are incorrect, fabricated, or not supported by verifiable information. These responses may appear coherent and well-structured, making them difficult to detect without careful validation.
+</p>
+
+<p>
+In practice, evaluators verify whether outputs are aligned with known facts and the prompt context. In ambiguous scenarios, this requires distinguishing between plausible responses and factually incorrect ones, even when both are linguistically well-formed.
+</p>
+
+<p>
+When hallucinations are not identified, they can be incorporated into datasets and reinforced during training. This affects downstream tasks such as evaluation, ranking, and response generation, reducing system reliability and increasing the risk of spreading incorrect information.
+</p>
+
+<p>
+For that reason, mitigating hallucinations requires consistent factual validation, clear guidelines, and continuous review. This process improves output accuracy and ensures alignment with verifiable information.
+</p>
+
+</div>
+
+<script>
+function setLang(lang){
+  document.getElementById('pt').classList.toggle('hidden', lang==='en');
+  document.getElementById('en').classList.toggle('hidden', lang==='pt');
+}
+</script>
+
+</body>
+</html>
