@@ -1,111 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Thais Granado</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thais Granado | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f6f8;
-      color: #1a1a1a;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6f8;
+  color: #1a1a1a;
+}
 
-    .hero {
-      background: linear-gradient(#0f172a, #1e2b4a);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
+.hero {
+  background: linear-gradient(#0f172a, #1e2b4a);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    .hero h1 {
-      margin: 0;
-      font-size: 42px;
-    }
+.hero h1 {
+  margin: 0;
+  font-size: 42px;
+}
 
-    .hero p {
-      margin-top: 10px;
-      font-size: 18px;
-      opacity: 0.9;
-    }
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
 
-    .nav {
-      background: #1d2940;
-      text-align: center;
-      padding: 15px;
-    }
+.nav {
+  background: #1d2940;
+  text-align: center;
+  padding: 15px;
+}
 
-    .nav a {
-      color: white;
-      margin: 10px;
-      text-decoration: none;
-    }
+.nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
 
-    .container {
-      max-width: 950px;
-      margin: 40px auto;
-      padding: 20px;
-    }
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
-    .card {
-      background: #f0f1f3;
-      padding: 30px;
-      border-radius: 15px;
-      margin-bottom: 30px;
-    }
+.card {
+  background: #f0f1f3;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
 
-    .card h2 {
-      margin-top: 0;
-      font-size: 32px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
-    .card h3 {
-      margin-top: 0;
-      font-size: 22px;
-    }
+.mini-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
 
-    .card p {
-      font-size: 17px;
-      line-height: 1.7;
-    }
+.section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+</style>
 
-    .card ul {
-      padding-left: 20px;
-    }
-
-    .card li {
-      margin-bottom: 8px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 18px;
-      background: #16254a;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-    }
-  </style>
 </head>
 
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <h1>About Me</h1>
-  <p>Legal • Governance • AI Evaluation</p>
+  <h1>Thais Granado</h1>
+  <p>Legal | Governance | Corporate | Data & AI</p>
 </div>
 
-<!-- NAV -->
+<!-- MENU (CORRIGIDO) -->
 <div class="nav">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="projects.html">Projects</a>
   <a href="JUDGEMENT-NOTES.HTML">Notes</a>
-  <a href="index.html#certificates">Certificates</a>
+  <a href="#certificates">Certificates</a>
   <a href="ai-topics.html">AI Topics</a>
   <a href="estudos/index.html">Studies</a>
 </div>
@@ -113,95 +99,92 @@
 <!-- CONTENT -->
 <div class="container">
 
-  <!-- PROFILE -->
-  <div class="card">
-    <h2>Professional Profile</h2>
-    <p>
-      I am a legal professional with over five years of experience in the Brazilian judicial system, working with case analysis, formal documentation, and structured decision-making in regulated environments.
-    </p>
-    <p>
-      This background required accuracy, neutrality, and consistency — skills directly applicable to AI evaluation, data quality, and guideline-based decision processes.
-    </p>
-    <p>
-      My current work focuses on applying these principles to AI systems, particularly in areas such as output evaluation, ambiguity handling, and quality control.
-    </p>
+<div class="card">
+  <h2>AI Evaluation Portfolio</h2>
+  <p>
+    Structured evaluation of AI systems, focusing on data quality,
+    human judgement, ambiguity handling, and output validation.
+  </p>
+</div>
 
-    <a class="btn" href="https://www.linkedin.com/" target="_blank">
-      View LinkedIn Profile
-    </a>
+<div class="grid">
+
+  <div class="mini-card">
+    <h3>AI Evaluation Lab</h3>
+    <p>Explore structured evaluation topics used in real AI systems.</p>
+    <a href="evaluation-lab/index.html">Open</a>
   </div>
 
-  <!-- LAW -->
-  <div class="card">
-    <h3>Legal Background</h3>
-    <p>
-      My law degree provided a structured approach to analysing information, interpreting rules, and applying frameworks to complex scenarios.
-    </p>
-    <ul>
-      <li>Guideline-based evaluation</li>
-      <li>Structured reasoning</li>
-      <li>Decision-making under ambiguity</li>
-      <li>Accuracy and documentation control</li>
-    </ul>
+  <div class="mini-card">
+    <h3>Judgement Notes</h3>
+    <p>Reflections on decision-making, governance, and AI systems.</p>
+    <a href="JUDGEMENT-NOTES.HTML">Open</a>
   </div>
 
-  <!-- COURT -->
-  <div class="card">
-    <h3>Judicial Experience</h3>
-    <p>
-      I worked within the Court of Justice of Rio de Janeiro supporting legal proceedings, documentation, and hearing processes.
-    </p>
-    <p>
-      I also acted as a certified mediator and conciliator, conducting sensitive cases in family and consumer law.
-    </p>
-    <p>
-      This required ethical judgement, attention to detail, and consistency — directly aligned with AI evaluation tasks such as reviewing outputs, applying criteria, and ensuring quality.
-    </p>
-  </div>
-
-  <!-- AI -->
-  <div class="card">
-    <h3>Why AI Evaluation</h3>
-    <p>
-      AI systems depend on human judgement, data quality, and evaluation processes.
-    </p>
-    <p>
-      My background aligns naturally with this work, focusing on identifying inconsistencies, evaluating responses, and applying structured criteria to ensure reliable outputs.
-    </p>
-  </div>
-
-  <!-- CERTS -->
-  <div class="card">
-    <h3>Certificates</h3>
-    <p>
-      My certifications reflect a focused transition into AI evaluation, governance, and data quality.
-    </p>
-    <ul>
-      <li>AWS Responsible AI</li>
-      <li>AWS Generative AI</li>
-      <li>AWS Prompt Engineering</li>
-      <li>Data Science — IE University</li>
-      <li>Data Protection & Privacy</li>
-      <li>AI Compliance & Governance</li>
-      <li>Risk Management</li>
-      <li>Cybersecurity GRC</li>
-      <li>Corporate Governance</li>
-    </ul>
-  </div>
-
-  <!-- FOCUS -->
-  <div class="card">
-    <h3>Professional Focus</h3>
-    <ul>
-      <li>AI evaluation and data annotation</li>
-      <li>Quality control and validation</li>
-      <li>Structured decision-making</li>
-      <li>Governance and compliance</li>
-      <li>Risk and data handling</li>
-    </ul>
+  <div class="mini-card">
+    <h3>Studies</h3>
+    <p>Technical learning and structured notes.</p>
+    <a href="estudos/index.html">Open</a>
   </div>
 
 </div>
+
+</div>
+
+<!-- CERTIFICATES SECTION -->
+<section id="certificates" style="max-width:900px; margin:40px auto; padding:20px;">
+
+<div class="section">
+  <h2>Certificates</h2>
+  <p>Selected certifications in AI, governance, data, and risk.</p>
+</div>
+
+<div class="section">
+  <h3>Responsible AI — AWS</h3>
+  <a href="portfolio-certificates/cert-1.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>Generative AI — AWS</h3>
+  <a href="portfolio-certificates/cert-2.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>Prompt Engineering — AWS</h3>
+  <a href="portfolio-certificates/cert-3.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>Data Science — IE University</h3>
+  <a href="portfolio-certificates/cert-4.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>Data Protection & Privacy</h3>
+  <a href="portfolio-certificates/cert-5.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>AI Governance</h3>
+  <a href="portfolio-certificates/cert-6.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>Risk Management</h3>
+  <a href="portfolio-certificates/cert-7.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>Cybersecurity (GRC)</h3>
+  <a href="portfolio-certificates/cert-8.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+<div class="section">
+  <h3>Corporate Governance</h3>
+  <a href="portfolio-certificates/cert-9.jpg.pdf" target="_blank">View certificate</a>
+</div>
+
+</section>
 
 </body>
 </html>
