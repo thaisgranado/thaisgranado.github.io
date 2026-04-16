@@ -3,83 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thais Granado | Portfolio</title>
+<title>AI Evaluation Lab | Thais Granado</title>
 
 <style>
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  background: #f5f6f8;
-  color: #1a1a1a;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #1a1a1a;
 }
 
 .hero {
-  background: linear-gradient(#0f172a, #1e2b4a);
-  color: white;
-  text-align: center;
-  padding: 70px 20px;
+    background: linear-gradient(#0f172a, #1e2b4a);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 42px;
+    margin: 0;
+    font-size: 42px;
 }
 
 .hero p {
-  margin-top: 10px;
-  font-size: 18px;
-  opacity: 0.9;
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
 }
 
 .nav {
-  background: #1d2940;
-  text-align: center;
-  padding: 15px;
+    background: #1d2940;
+    text-align: center;
+    padding: 15px;
 }
 
 .nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-size: 14px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-.section {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 .card {
-  background: #f0f1f3;
-  padding: 25px;
-  border-radius: 12px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 18px;
-  background: #0f172a;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 14px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
+.mini-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.mini-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cert-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cert-card a {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #1d4ed8;
+    text-decoration: none;
+}
 </style>
 
 </head>
@@ -88,129 +115,122 @@ body {
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Thais Granado</h1>
-  <p>Legal • Governance • Corporate • Data & AI</p>
+  <h1>AI Evaluation Lab</h1>
+  <p>Human Judgment • Data Quality • AI Systems</p>
+  <p style="opacity:0.7;">Thais Granado</p>
 </div>
 
 <!-- NAV -->
 <div class="nav">
   <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="JUDGEMENT-NOTES.HTML">Notes</a>
-  <a href="#certificates">Certificates</a>
+  <a href="evaluation-lab/index.html">AI Lab</a>
   <a href="ai-topics.html">AI Topics</a>
-  <a href="estudos/index.html">Studies</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="#certificates">Certificates</a>
 </div>
 
+<!-- CONTENT -->
 <div class="container">
 
 <!-- ABOUT -->
-<div class="section">
-  <h2>Professional Profile</h2>
+<div class="card">
+  <h2>About Me</h2>
   <p>
-    I am a legal professional with over five years of experience in the Brazilian judicial system,
-    working with case analysis, formal documentation, procedural accuracy, and decision-making in
-    sensitive and regulated environments.
+    Business support professional with experience in regulated environments, including judicial systems and UK infrastructure.
+    Strong background in data accuracy, governance, and handling confidential information.
   </p>
 
   <p>
-    My work required structured judgement, neutrality, and attention to detail — skills directly
-    aligned with AI evaluation, data quality, annotation, and governance.
+    Currently working with AI data evaluation and quality analysis, focusing on bias detection, response validation, and human judgement in AI systems.
   </p>
-
-  <p>
-    I am currently building a portfolio focused on the intersection between law, governance,
-    decision-making, and artificial intelligence, with emphasis on evaluation processes,
-    output quality, and responsible AI systems.
-  </p>
-
-  <a class="button" href="#" target="_blank">View LinkedIn Profile</a>
 </div>
 
-<!-- WORK AREAS -->
-<div class="section">
-  <h2>Work & Focus Areas</h2>
+<!-- PROJECTS -->
+<div class="grid">
 
-  <div class="grid">
-
-    <div class="card">
-      <h3>AI Evaluation Lab</h3>
-      <p>Structured evaluation of AI outputs, ambiguity handling, and quality assessment.</p>
-      <a href="evaluation-lab/index.html">Open</a>
-    </div>
-
-    <div class="card">
-      <h3>Judgement Notes</h3>
-      <p>Decision-making, governance thinking, and structured reasoning.</p>
-      <a href="JUDGEMENT-NOTES.HTML">Open</a>
-    </div>
-
-    <div class="card">
-      <h3>Studies</h3>
-      <p>Technical notes on AI, data, governance, and evaluation systems.</p>
-      <a href="estudos/index.html">Open</a>
-    </div>
-
+  <div class="mini-card">
+    <h3>AI Evaluation Lab</h3>
+    <p>Structured evaluation topics used in AI systems.</p>
+    <a href="evaluation-lab/index.html">Open</a>
   </div>
-</div>
+
+  <div class="mini-card">
+    <h3>Judgement Notes</h3>
+    <p>Decision-making, governance, and AI reflections.</p>
+    <a href="JUDGEMENT-NOTES.HTML">Open</a>
+  </div>
+
+  <div class="mini-card">
+    <h3>Studies</h3>
+    <p>Technical learning and structured notes.</p>
+    <a href="estudos/index.html">Open</a>
+  </div>
 
 </div>
 
 <!-- CERTIFICATES -->
-<section id="certificates" style="max-width:900px; margin:40px auto; padding:20px;">
+<h2 id="certificates" class="section-title">Certificates</h2>
 
-<div class="section">
-  <h2>Certificates</h2>
-  <p>Selected certifications in AI, governance, data protection, and risk.</p>
+<div class="cert-grid">
+
+<div class="cert-card">
+<img src="portfolio-certificates/cert-1.jpg">
+<a href="portfolio-certificates/cert-1.jpg.pdf" target="_blank">View</a>
+<p>Responsible AI</p>
 </div>
 
-<div class="section">
-  <h3>Responsible Artificial Intelligence — AWS</h3>
-  <a href="portfolio-certificates/cert-1.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-2.jpg">
+<a href="portfolio-certificates/cert-2.jpg.pdf" target="_blank">View</a>
+<p>Generative AI</p>
 </div>
 
-<div class="section">
-  <h3>Generative AI — AWS</h3>
-  <a href="portfolio-certificates/cert-2.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-3.jpg">
+<a href="portfolio-certificates/cert-3.jpg.pdf" target="_blank">View</a>
+<p>Prompt Engineering</p>
 </div>
 
-<div class="section">
-  <h3>Prompt Engineering — AWS</h3>
-  <a href="portfolio-certificates/cert-3.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-4.jpg">
+<a href="portfolio-certificates/cert-4.jpg.pdf" target="_blank">View</a>
+<p>Data Science</p>
 </div>
 
-<div class="section">
-  <h3>Introduction to Data Science — IE University</h3>
-  <a href="portfolio-certificates/cert-4.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-5.jpg">
+<a href="portfolio-certificates/cert-5.jpg.pdf" target="_blank">View</a>
+<p>Data Protection</p>
 </div>
 
-<div class="section">
-  <h3>Data Protection & Privacy</h3>
-  <a href="portfolio-certificates/cert-5.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-6.jpg">
+<a href="portfolio-certificates/cert-6.jpg.pdf" target="_blank">View</a>
+<p>AI Governance</p>
 </div>
 
-<div class="section">
-  <h3>AI Governance & Compliance</h3>
-  <a href="portfolio-certificates/cert-6.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-7.jpg">
+<a href="portfolio-certificates/cert-7.jpg.pdf" target="_blank">View</a>
+<p>Risk Management</p>
 </div>
 
-<div class="section">
-  <h3>Risk Management & Decision-Making</h3>
-  <a href="portfolio-certificates/cert-7.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-8.jpg">
+<a href="portfolio-certificates/cert-8.jpg.pdf" target="_blank">View</a>
+<p>Cybersecurity</p>
 </div>
 
-<div class="section">
-  <h3>Cybersecurity Foundations (GRC)</h3>
-  <a href="portfolio-certificates/cert-8.jpg.pdf" target="_blank">View certificate</a>
+<div class="cert-card">
+<img src="portfolio-certificates/cert-9.jpg">
+<a href="portfolio-certificates/cert-9.jpg.pdf" target="_blank">View</a>
+<p>Governance</p>
 </div>
 
-<div class="section">
-  <h3>Corporate Governance Essentials</h3>
-  <a href="portfolio-certificates/cert-9.jpg.pdf" target="_blank">View certificate</a>
 </div>
 
-</section>
+</div>
 
 </body>
 </html>
